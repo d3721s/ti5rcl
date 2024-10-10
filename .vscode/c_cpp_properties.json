@@ -1,0 +1,18 @@
+{
+  "configurations": [
+    {
+      "name": "windows-gcc-x64",
+      "includePath": [
+        "${workspaceFolder}/**"
+      ],
+      "compilerPath": "C:/Program Files (x86)/Arm GNU Toolchain aarch64-none-linux-gnu/13.3 rel1/bin/aarch64-none-linux-gnu-gcc.exe",
+      "cStandard": "c23",
+      "cppStandard": "c++23",
+      "intelliSenseMode": "windows-gcc-x64",
+      "compilerArgs": [
+        ""
+      ]
+    }
+  ],
+  "version": 4
+}

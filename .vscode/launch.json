@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/lenovo/Desktop/ws/ti5rcl/Src",
+      "program": "c:/Users/lenovo/Desktop/ws/ti5rcl/Src/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "C:/Program Files (x86)/Arm GNU Toolchain aarch64-none-linux-gnu/13.3 rel1/bin/aarch64-none-linux-gnu-gdb.exe",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
