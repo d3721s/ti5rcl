@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1728520322 source:c:\users\lenovo\desktop\ws\ti5rcl\middlewares\ti5mcl\middlewares\tlog\tlog.c
+	"tlog.h"
+	<dirent.h>
+	<errno.h>
+	<fcntl.h>
+	<libgen.h>
+	<limits.h>
+	<pthread.h>
+	<stdarg.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<sys/resource.h>
+	<sys/stat.h>
+	<sys/syscall.h>
+	<sys/time.h>
+	<sys/types.h>
+	<sys/wait.h>
+	<unistd.h>
+
+1728372928 c:\users\lenovo\desktop\ws\ti5rcl\middlewares\ti5mcl\middlewares\tlog\tlog.h
+	<stdarg.h>
+	<sys/stat.h>
+	<sys/types.h>
+	<functional>
+	<iostream>
+	<memory>
+	<sstream>
+	<string>
+
