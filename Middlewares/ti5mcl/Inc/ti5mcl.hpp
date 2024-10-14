@@ -75,24 +75,24 @@ public:
             }
             tlog_setlevel(LOGLEVEL);
         });
-        thread autoMonitorThread([this]() mutable
-        {
-            struct timeval timeoutMonitor;
-            timeoutMonitor.tv_sec = 4;
-            timeoutMonitor.tv_usec = 0;
-            tlog_info << "Monitor thread started!" << endl;
-            while(true)
-            {
-                select(0, NULL, NULL, NULL, &timeoutMonitor);
-                readParameter(getErrorCode, &_autoErrorNum);
-                tlog_debug << "Error code: " << to_string(_autoErrorNum) << endl;
-                if(_autoErrorNum !=0)
-                {
-                    tlog_error << "Error code: " << to_string(_autoErrorNum) << endl;
-                    _status = motorStatus_fail;
-                }
-            }
-        });
+//        thread autoMonitorThread([this]() mutable
+//        {
+//            struct timeval timeoutMonitor;
+//            timeoutMonitor.tv_sec = 4;
+//            timeoutMonitor.tv_usec = 0;
+//            tlog_info << "Monitor thread started!" << endl;
+//            while(true)
+//            {
+//                select(0, NULL, NULL, NULL, &timeoutMonitor);
+//                readParameter(getErrorCode, &_autoErrorNum);
+//                tlog_debug << "Error code: " << to_string(_autoErrorNum) << endl;
+//                if(_autoErrorNum !=0)
+//                {
+//                    tlog_error << "Error code: " << to_string(_autoErrorNum) << endl;
+//                    _status = motorStatus_fail;
+//                }
+//            }
+//        });
         // thread autoCSPThread([this]() mutable{});
     }
     ~ti5Motor()
@@ -117,7 +117,7 @@ public:                  // 常用1
     //        DIRECTIONNEGATIVE = 1, // 负向
     //    } Direction;               // 方向
 
-    bool moveJog(float velocity = M_PI / 6); // 点动 
+    bool moveJog(float velocity = M_PI / 6); // 点动
 public:                                      // 常用2
     bool quickSetMaxVelocity(float
                           maxVelocity); // 设置最大速度
