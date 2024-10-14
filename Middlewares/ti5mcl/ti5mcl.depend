@@ -1,0 +1,116 @@
+# depslib dependency file v1.0
+1728716318 source:/home/runyu/ti5rcl/Middlewares/ti5mcl/Middlewares/libsocketcanpp/src/CanDriver.cpp
+	<fcntl.h>
+	<linux/can.h>
+	<linux/can/raw.h>
+	<net/if.h>
+	<sys/ioctl.h>
+	<sys/socket.h>
+	<sys/types.h>
+	<unistd.h>
+	<cmath>
+	<cstdlib>
+	<cstring>
+	<mutex>
+	<queue>
+	<string>
+	<thread>
+	"CanDriver.hpp"
+	"CanId.hpp"
+	"CanMessage.hpp"
+	"exceptions/CanCloseException.hpp"
+	"exceptions/CanException.hpp"
+	"exceptions/CanInitException.hpp"
+	"exceptions/InvalidSocketException.hpp"
+
+1728716318 /home/runyu/ti5rcl/Middlewares/ti5mcl/Middlewares/libsocketcanpp/include/CanDriver.hpp
+	<mutex>
+	<queue>
+	<string>
+	<thread>
+	"CanId.hpp"
+	"CanMessage.hpp"
+
+1728716318 /home/runyu/ti5rcl/Middlewares/ti5mcl/Middlewares/libsocketcanpp/include/CanId.hpp
+	<bitset>
+	<cmath>
+	<exception>
+	<linux/can.h>
+	<system_error>
+
+1728716318 /home/runyu/ti5rcl/Middlewares/ti5mcl/Middlewares/libsocketcanpp/include/CanMessage.hpp
+	<linux/can.h>
+	<cstring>
+	<exception>
+	<string>
+	<system_error>
+	<thread>
+	"CanId.hpp"
+
+1728716318 /home/runyu/ti5rcl/Middlewares/ti5mcl/Middlewares/libsocketcanpp/include/exceptions/CanCloseException.hpp
+	<exception>
+	<string>
+
+1728716318 /home/runyu/ti5rcl/Middlewares/ti5mcl/Middlewares/libsocketcanpp/include/exceptions/CanException.hpp
+	<exception>
+	<string>
+
+1728716318 /home/runyu/ti5rcl/Middlewares/ti5mcl/Middlewares/libsocketcanpp/include/exceptions/CanInitException.hpp
+	<exception>
+	<string>
+
+1728716318 /home/runyu/ti5rcl/Middlewares/ti5mcl/Middlewares/libsocketcanpp/include/exceptions/InvalidSocketException.hpp
+	<exception>
+	<string>
+
+1728716318 source:/home/runyu/ti5rcl/Middlewares/ti5mcl/Middlewares/tlog/tlog.c
+	"tlog.h"
+	<dirent.h>
+	<errno.h>
+	<fcntl.h>
+	<libgen.h>
+	<limits.h>
+	<pthread.h>
+	<stdarg.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<sys/resource.h>
+	<sys/stat.h>
+	<sys/syscall.h>
+	<sys/time.h>
+	<sys/types.h>
+	<sys/wait.h>
+	<unistd.h>
+
+1728716318 /home/runyu/ti5rcl/Middlewares/ti5mcl/Middlewares/tlog/tlog.h
+	<stdarg.h>
+	<sys/stat.h>
+	<sys/types.h>
+	<functional>
+	<iostream>
+	<memory>
+	<sstream>
+	<string>
+
+1728716318 source:/home/runyu/ti5rcl/Middlewares/ti5mcl/Src/ti5mcl.cpp
+	"ti5mcl.hpp"
+
+1728716318 /home/runyu/ti5rcl/Middlewares/ti5mcl/Inc/ti5mcl.hpp
+	<iostream>
+	<cstdint>
+	<thread>
+	<iterator>
+	<sstream>
+	<iomanip>
+	<chrono>
+	<cmath>
+	<CanDriver.hpp>
+	<exceptions/CanException.hpp>
+	<exceptions/CanInitException.hpp>
+	<exceptions/InvalidSocketException.hpp>
+	"tlog.h"
+
+1728722091 source:/home/runyu/ti5rcl/Middlewares/ti5mcl/Src/demo.cpp
+	"ti5mcl.hpp"
+

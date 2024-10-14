@@ -4,16 +4,16 @@
 	<Project>
 		<Option title="ti5rcl" />
 		<Option pch_mode="2" />
-		<Option compiler="arm-elf-gcc" />
+		<Option compiler="gcc" />
 		<Build>
 			<Target title="demo">
 				<Option output="bin/Release/ti5rcl.elf" prefix_auto="0" extension_auto="0" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
-				<Option compiler="arm-elf-gcc" />
+				<Option compiler="gcc" />
 				<Compiler>
-					<Add option="-g" />
 					<Add option="-O2" />
+					<Add option="-g" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -24,7 +24,7 @@
 				<Option working_dir="bin/so/" />
 				<Option object_output="obj/so/" />
 				<Option type="3" />
-				<Option compiler="arm-elf-gcc" />
+				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
 					<Add option="-Wall" />
@@ -45,10 +45,17 @@
 			<Add directory="Middlewares/ti5mcl/Inc" />
 			<Add directory="Middlewares/ti5mcl/Middlewares/libsocketcanpp/include" />
 			<Add directory="Middlewares/ti5mcl/Middlewares/tlog" />
+			<Add directory="../ti5rcl" />
+			<Add directory="../../../opt/ros/foxy/include" />
+			<Add directory="../../../usr/include" />
+			<Add directory="../../../usr/include/eigen3" />
 		</Compiler>
 		<Linker>
 			<Add option="-s" />
 			<Add option="-lpthread" />
+			<Add library="../../../opt/ros/foxy/lib/libkdl_parser.so" />
+			<Add library="../../../opt/ros/foxy/lib/liborocos-kdl.so" />
+			<Add library="../../../opt/ros/foxy/lib/liburdf.so" />
 		</Linker>
 		<Unit filename="Inc/ti5rcl.hpp" />
 		<Unit filename="Middlewares/ti5mcl/Inc/ti5mcl.hpp" />
