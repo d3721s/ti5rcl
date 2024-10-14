@@ -46,16 +46,16 @@
 			<Add directory="Middlewares/ti5mcl/Middlewares/libsocketcanpp/include" />
 			<Add directory="Middlewares/ti5mcl/Middlewares/tlog" />
 			<Add directory="../ti5rcl" />
-			<Add directory="../../../opt/ros/foxy/include" />
-			<Add directory="../../../usr/include" />
-			<Add directory="../../../usr/include/eigen3" />
+			<Add directory="/usr/include" />
+			<Add directory="/usr/include/eigen3" />
+			<Add directory="/opt/ros/foxy/include" />
 		</Compiler>
 		<Linker>
 			<Add option="-s" />
 			<Add option="-lpthread" />
-			<Add library="../../../opt/ros/foxy/lib/libkdl_parser.so" />
-			<Add library="../../../opt/ros/foxy/lib/liborocos-kdl.so" />
-			<Add library="../../../opt/ros/foxy/lib/liburdf.so" />
+			<Add library="/opt/ros/foxy/lib/liborocos-kdl.so" />
+			<Add library="/opt/ros/foxy/lib/libkdl_parser.so" />
+			<Add library="/opt/ros/foxy/lib/liburdf.so" />
 		</Linker>
 		<Unit filename="Inc/ti5rcl.hpp" />
 		<Unit filename="Middlewares/ti5mcl/Inc/ti5mcl.hpp" />
