@@ -535,8 +535,7 @@ bool ti5Motor::readParameter(
     _canFrameReceive = _canDriver->readMessage().getRawFrame();
     if (((_canFrameReceive.can_id) !=
             _canFrameSend.can_id) ||
-            (_canFrameReceive.can_dlc != 5) ||
-            (_canFrameReceive.data[0] != parameterCode))
+            (_canFrameReceive.can_dlc != 8))
     {
         tlog_error << "Receive Wrong Message! " << endl;
         stringstream ssReceived;
@@ -563,6 +562,7 @@ bool ti5Motor::readParameter(
               (static_cast<int32_t>(_canFrameReceive.data[5]) << 8) |
               (static_cast<int32_t>(_canFrameReceive.data[6]) << 16) |
               (static_cast<int32_t>(_canFrameReceive.data[7]) << 24);
+
     return true;
 }
 
@@ -617,8 +617,7 @@ bool ti5Motor::writeAndReadParameter(
 
     if (((_canFrameReceive.can_id) !=
             _canFrameSend.can_id) ||
-            (_canFrameReceive.can_dlc != 5) ||
-            (_canFrameReceive.data[0] != parameterCode))
+            (_canFrameReceive.can_dlc != 8) )
     {
         tlog_error << "Receive Wrong Message! " << endl;
         stringstream ssReceived;
