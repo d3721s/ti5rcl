@@ -108,12 +108,12 @@ bool ti5Motor::quickSetMinPosition(
     return writeParameter(setMaxNegativePositionCode, minPosition * static_cast<uint8_t>(_reductionRatio) * 32768 / M_PI);
 }
 
-bool ti5Motor::quickGetCSP(uint32_t* _current,float* _speed,float* _position)
+bool ti5Motor::quickGetCSP(int32_t* _current,float* _speed,float* _position)
 {
     tlog_info << "Getting CSP!" << endl;
     if (!readParameter(getCurrentVelocityPositionCode,&_currentRaw,&_velocityRaw,&_positionRaw))
         return false;
-    *_current = _currentRaw;
+    *_current = abs(_currentRaw);
     *_speed = _velocityRaw * M_PI / 50 / static_cast<uint8_t>(_reductionRatio);
     *_position = _positionRaw * M_PI / static_cast<uint8_t>(_reductionRatio) / 32768;
     tlog_info << "Current: " << to_string(*_current) << " Speed: " << to_string(*_speed) << " Position: " << to_string(*_position) << endl;

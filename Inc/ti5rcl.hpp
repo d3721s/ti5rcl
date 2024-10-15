@@ -16,6 +16,7 @@
 #include <kdl/frames.hpp>
 #include <stdio.h>
 #include <iostream>
+#include "tlog.h"
 
 #include "ti5mcl.hpp"
 
@@ -33,15 +34,26 @@
 #define LOGLEVEL TLOG_WARN
 #endif
 
+#define _urdfPath "/home/runyu/urdf/arm5.urdf"
+#define chainRoot "base_link"
+#define chainTip "Empty_Link5"
 namespace ti5rcl
 {
 using namespace std;
 using namespace ti5mcl;
+using namespace KDL;
 class DLLEXPORT_API ti5Robot
 {
 public: //机械臂基础
     ti5Robot()
     {
+        kdl_parser::treeFromFile(_urdfPath,_tree);
+        if(!_tree.getChain(chainRoot,chainTip,_chain))
+        {
+            tlog_error << "Failed to get chain from chainRoot to chainTip." << endl;
+            exit(1);
+        }
+        tlog_info << "Chain from chainRoot to chainTip has " << _tree.getNrOfJoints() << " joints and " << _tree.getNrOfSegments() << " segments." << endl;
 
     }
     ~ti5Robot();
@@ -80,6 +92,8 @@ public: //扩展1
 
 
 private:
+    Chain& _chain;
+    Tree& _tree;
     vector<ti5Motor> Joint;
 public:
 

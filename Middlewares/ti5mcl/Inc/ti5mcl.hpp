@@ -15,6 +15,12 @@
 #include <exceptions/InvalidSocketException.hpp>
 #include "tlog.h"
 
+#ifdef _WINDOWS
+#define DLLEXPORT_API __declspec(dllexport)
+#else
+#define DLLEXPORT_API
+#endif
+
 #define LOGLEVEL TLOG_DEBUG
 #warning "LOGLEVEL-debug"
 
@@ -30,7 +36,7 @@ namespace ti5mcl
 
 using namespace std;
 using namespace sockcanpp;
-class ti5Motor
+class DLLEXPORT_API ti5Motor
 {
 public:
     typedef enum
@@ -127,7 +133,7 @@ public:                                      // 常用2
                              maxPosition); // 设置最大位置
     bool quickSetMinPosition(float
                              minPosition); // 设置最小位置
-    bool quickGetCSP(uint32_t* _current,float* _speed,float* _position);
+    bool quickGetCSP(int32_t* _current,float* _speed,float* _position);
 
     bool quickGetMaxVelocity(float *
                           maxVelocity); // 获取最大速度
