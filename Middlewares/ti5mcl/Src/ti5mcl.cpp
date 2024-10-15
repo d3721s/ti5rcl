@@ -108,6 +108,17 @@ bool ti5Motor::quickSetMinPosition(
     return writeParameter(setMaxNegativePositionCode, minPosition * static_cast<uint8_t>(_reductionRatio) * 32768 / M_PI);
 }
 
+bool quickGetCSP(uint32_t* _current,float* _speed,float* _position)
+{
+    tlog_info << "Getting CSP!" << endl;
+    if (!readParameter(getCurrentVelocityPositionCode,&_currentRaw,&_velocityRaw,&_positionRaw))
+        return false;
+    *_current = _currentRaw;
+    *_speed = _velocityRaw * M_PI / 50 / static_cast<uint8_t>(_reductionRatio);
+    *_position = _positionRaw * M_PI / static_cast<uint8_t>(_reductionRatio) / 32768;
+    tlog_info << "Current: " << to_string(*_current) << " Speed: " << to_string(*_speed) << " Position: " << to_string(*_position) << endl;
+    return true;
+}
 bool ti5Motor::quickGetMaxVelocity(float *maxVelocity)
 {
     tlog_info << "Getting max velocity!" << endl;
@@ -115,6 +126,7 @@ bool ti5Motor::quickGetMaxVelocity(float *maxVelocity)
     if (!readParameter(getMaxPositiveVelocityCode, &_maxVelocityRaw))
         return false;
     *maxVelocity = _maxVelocityRaw * M_PI / 50 / static_cast<uint8_t>(_reductionRatio);
+    tlog_info << "Max Velocity: " << to_string(*maxVelocity) << endl;
     return true;
 }
 
@@ -126,6 +138,7 @@ bool ti5Motor::quickGetMaxAcceleration(
     if (readParameter(getMaxPositiveAccelerationCode, &_maxAccelerationRaw) == false)
         return false;
     *maxAcceleration = _maxAccelerationRaw * M_PI / 50 / static_cast<uint8_t>(_reductionRatio);
+    tlog_info << "Max Acceleration: " << to_string(*maxAcceleration) << endl;
 #warning "maxAcceleration != maxVelocity"
     return true;
 }
@@ -138,6 +151,7 @@ bool ti5Motor::quickGetMaxPosition(
     if (!readParameter(getMaxPositivePositionCode, &_maxPositionRaw))
         return false;
     *maxPosition = _maxPositionRaw * M_PI / static_cast<uint8_t>(_reductionRatio) / 32768;
+    tlog_info << "Max Position: " << to_string(*maxPosition) << endl;
     return true;
 }
 
@@ -149,6 +163,7 @@ bool ti5Motor::quickGetMinPosition(
     if (!readParameter(getMaxNegativePositionCode, &_minPositionRaw))
         return false;
     *minPosition = _minPositionRaw * M_PI / static_cast<uint8_t>(_reductionRatio) / 32768;
+    tlog_info << "Min Position: " << to_string(*minPosition) << endl;
     return true;
 }
 bool ti5Motor::quickGetMotorTemperature(int32_t *temperature)
@@ -157,6 +172,7 @@ bool ti5Motor::quickGetMotorTemperature(int32_t *temperature)
     if (!readParameter(getMotorTemperatureCode, &temperatureRaw))
         return false;
     *temperature = temperatureRaw;
+    tlog_info << "Motor Temperature: " << to_string(*temperature) << endl;
     return true;
 }
 bool ti5Motor::quickGetDriverTemperature(int32_t *temperature)
@@ -165,6 +181,7 @@ bool ti5Motor::quickGetDriverTemperature(int32_t *temperature)
     if (!readParameter(getDriverTemperatureCode, &temperatureRaw))
         return false;
     *temperature = temperatureRaw;
+    tlog_info << "Driver Temperature: " << to_string(*temperature) << endl;
     return true;
 }
 bool ti5Motor::autoMonitor(bool enable)

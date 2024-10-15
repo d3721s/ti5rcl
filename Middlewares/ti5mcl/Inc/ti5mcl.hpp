@@ -127,7 +127,7 @@ public:                                      // 常用2
                              maxPosition); // 设置最大位置
     bool quickSetMinPosition(float
                              minPosition); // 设置最小位置
-    bool quickGetCSP(uint32_t _current);
+    bool quickGetCSP(uint32_t* _current,float* _speed,float* _position);
 
     bool quickGetMaxVelocity(float *
                           maxVelocity); // 获取最大速度
@@ -247,7 +247,7 @@ private:
 
     typedef enum // get
     {
-        getCurrentVelocityPositionCode = 65, // 循环同步位置
+        getCurrentVelocityPositionCode = 65, // csp
     } parameterCodeTableSend1Receive2_2_4;
 
     typedef enum // set
@@ -362,6 +362,9 @@ private:
     int32_t _autoVelocityRaw;
     float _autoPosition;
     int32_t _autoPositionRaw;
+    int32_t _currentRaw;
+    int32_t _velocityRaw;
+
     int32_t _positionRaw;
     mutex canMutex;
 };
