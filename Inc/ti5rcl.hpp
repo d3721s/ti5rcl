@@ -66,7 +66,10 @@ public: //机械臂基础
         _nrOfJoints = _tree.getNrOfJoints();
         _nrOfSegments = _tree.getNrOfSegments();
         tlog_info << "Chain from chainRoot to chainTip has " <<  to_string(_nrOfJoints) << " joints and " << to_string(_nrOfSegments) << " segments." << endl;
-
+        for(uint8_t i=0;i<_nrOfJoints;i++)
+        {
+            _joint.push_back(ti5Motor(_chain.getSegment(i).getJoint().getJointId(),reductionRatioTab[i]));
+        }
     }
     ~ti5Robot() = default;
 public: //机械臂运动
