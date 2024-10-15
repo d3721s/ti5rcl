@@ -362,8 +362,8 @@ private:
     int32_t _autoVelocityRaw;
     float _autoPosition;
     int32_t _autoPositionRaw;
-    int32_t _currentRaw;
-    int32_t _velocityRaw;
+    int16_t _currentRaw;
+    int16_t _velocityRaw;
 
     int32_t _positionRaw;
     mutex canMutex;

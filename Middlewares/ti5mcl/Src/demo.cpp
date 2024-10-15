@@ -3,6 +3,9 @@ using namespace ti5mcl;
 using namespace std;
 int main()
 {
+    uint32_t c;
+    float v;
+    float p;
     ti5Motor M1(1, ti5Motor::reductionRatio101);
     ti5Motor M2(2, ti5Motor::reductionRatio101);
     ti5Motor M3(3, ti5Motor::reductionRatio81);
@@ -17,8 +20,14 @@ int main()
         M4.home();
         M5.home();
         this_thread::sleep_for(std::chrono::seconds(5));
+        M1.quickGetCSP(&c,&v,&p);
+        M1.moveAbsolute(M_PI/4);
+        this_thread::sleep_for(std::chrono::seconds(5));
+        M1.quickGetCSP(&c,&v,&p);
+        M1.moveAbsolute(-M_PI/2);
+        this_thread::sleep_for(std::chrono::seconds(5));
+        M1.quickGetCSP(&c,&v,&p);
 
-        M1.moveAbsolute(0.437364);
         M2.moveAbsolute(1.56192);
         M3.moveAbsolute(0.0647521);
         M4.moveAbsolute(0);
