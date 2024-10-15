@@ -1,13 +1,21 @@
 #ifndef TI5RCL_HPP_INCLUDED
 #define TI5RCL_HPP_INCLUDED
+#include "ti5mcl.hpp"
+#include <kdl/kdl.hpp>
+#include <kdl/chain.hpp>
+#include <kdl/tree.hpp>
+#include <kdl/segment.hpp>
+#include <kdl/chainfksolver.hpp>
+#include <kdl/chainiksolver.hpp>
+#include <kdl/chainiksolverpos_lma.hpp>
+#include <kdl/chainiksolverpos_nr.hpp>
+#include <kdl/chainiksolverpos_nr_jl.hpp>
+#include <kdl_parser/kdl_parser.hpp>
+#include <kdl/chainfksolverpos_recursive.hpp>
+#include <kdl/frames_io.hpp>
+#include <kdl/frames.hpp>
+#include <stdio.h>
 #include <iostream>
-#include <cstdint>
-#include <thread>
-#include <iterator>
-#include <sstream>
-#include <iomanip>
-#include <chrono>
-#include <cmath>
 
 #include "ti5mcl.hpp"
 
