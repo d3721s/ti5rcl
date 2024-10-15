@@ -16,10 +16,9 @@
 #include <stdio.h>
 #include <iostream>
 
+
 using namespace KDL;
-bool linear_move(const Frame *end_pos, MoveMode move_mode, BOOL is_block,
-                 double speed, double accel = 500, double tol = 0, const OptionalCond *option_cond = nullptr,
-                 double ori_vel=3.14, double ori_acc=12.56)
+bool linear_move(const Frame *end_pos)
 {
     //获取所有关节角度
 

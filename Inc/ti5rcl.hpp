@@ -40,7 +40,11 @@ using namespace ti5mcl;
 class DLLEXPORT_API ti5Robot
 {
 public: //机械臂基础
-    ti5Robot();
+    ti5Robot()
+    {
+
+    }
+    ~ti5Robot();
 public: //机械臂运动
 //	bool jog(int aj_num, MoveMode move_mode, CoordType coord_type, double vel_cmd, double pos_cmd);
 //	bool jog_stop(int num);
