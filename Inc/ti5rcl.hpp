@@ -47,17 +47,30 @@ class DLLEXPORT_API ti5Robot
 public: //机械臂基础
     ti5Robot()
     {
+        ti5Motor::reductionRatio reductionRatioTab[7]=
+        {
+            ti5Motor::reductionRatio101,
+            ti5Motor::reductionRatio101,
+            ti5Motor::reductionRatio81,
+            ti5Motor::reductionRatio81,
+            ti5Motor::reductionRatio51,
+            ti5Motor::reductionRatio51,
+            ti5Motor::reductionRatio51
+        };
         kdl_parser::treeFromFile(_urdfPath,_tree);
         if(!_tree.getChain(chainRoot,chainTip,_chain))
         {
             tlog_error << "Failed to get chain from chainRoot to chainTip." << endl;
             exit(1);
         }
-        tlog_info << "Chain from chainRoot to chainTip has " << _tree.getNrOfJoints() << " joints and " << _tree.getNrOfSegments() << " segments." << endl;
+        _nrOfJoints = _tree.getNrOfJoints();
+        _nrOfSegments = _tree.getNrOfSegments();
+        tlog_info << "Chain from chainRoot to chainTip has " <<  to_string(_nrOfJoints) << " joints and " << to_string(_nrOfSegments) << " segments." << endl;
 
     }
-    ~ti5Robot();
+    ~ti5Robot() = default;
 public: //机械臂运动
+bool linear_move(const Frame *end_pos);
 //	bool jog(int aj_num, MoveMode move_mode, CoordType coord_type, double vel_cmd, double pos_cmd);
 //	bool jog_stop(int num);
 //	bool joint_move(const JointValue *joint_pos, MoveMode move_mode, BOOL is_block, double speed, double acc = 90, double tol = 0, const OptionalCond *option_cond= nullptr);
@@ -92,9 +105,11 @@ public: //扩展1
 
 
 private:
-    Chain& _chain;
-    Tree& _tree;
-    vector<ti5Motor> Joint;
+    Chain _chain;
+    uint8_t _nrOfJoints;
+    uint8_t _nrOfSegments;
+    Tree _tree;
+    vector<ti5Motor> _joint;
 public:
 
 

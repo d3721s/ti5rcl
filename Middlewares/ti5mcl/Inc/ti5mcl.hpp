@@ -81,6 +81,7 @@ public:
             }
             tlog_setlevel(LOGLEVEL);
         });
+
 //        thread autoMonitorThread([this]() mutable
 //        {
 //            struct timeval timeoutMonitor;
@@ -100,7 +101,18 @@ public:
 //            }
 //        });
         // thread autoCSPThread([this]() mutable{});
+        tlog_info << "ti5Motor id" << to_string(_canId) << "has been created!" << endl;
     }
+//    ti5Motor(const ti5Motor &other):_canId(other._canId), _reductionRatio(other._reductionRatio) {};
+//    ti5Motor &operator=(const ti5Motor &other)
+//    {
+//        if (this != &other)
+//        {
+//            _canId = other._canId;
+//            _reductionRatio = other._reductionRatio;
+//        }
+//        return *this;
+//    }
     ~ti5Motor()
     {
     }
@@ -126,7 +138,7 @@ public:                  // 常用1
     bool moveJog(float velocity = M_PI / 6); // 点动
 public:                                      // 常用2
     bool quickSetMaxVelocity(float
-                          maxVelocity); // 设置最大速度
+                             maxVelocity); // 设置最大速度
     bool quickSetMaxAcceleration(float
                                  maxAcceleration); // 设置最大加速度
     bool quickSetMaxPosition(float
@@ -136,7 +148,7 @@ public:                                      // 常用2
     bool quickGetCSP(int32_t* _current,float* _speed,float* _position);
 
     bool quickGetMaxVelocity(float *
-                          maxVelocity); // 获取最大速度
+                             maxVelocity); // 获取最大速度
     bool quickGetMaxAcceleration(float *
                                  maxAcceleration); // 获取最大加速度
     bool quickGetMaxPosition(float *
@@ -176,9 +188,9 @@ private: // 未测试，暂时禁用扩展
     bool customGetMaxCurrent(int32_t *
                              maxCurrent); // 获取最大电流
     bool customGetVelocityProportional(int32_t *
-                                    proportional); // 获取速度环比例
+                                       proportional); // 获取速度环比例
     bool customGetVelocityIntegral(int32_t *
-                                integral); // 获取速度积分
+                                   integral); // 获取速度积分
     // bool customGetVelocityDerivative(int32_t *derivative); //获取速度微分
     bool customGetPositionProportional(
         int32_t *proportional); // 获取位置环比例
@@ -361,7 +373,7 @@ private:
 
     int32_t _autoErrorNum = 0;
     const bool _autoCSPStatus = false; //暂时const false
-    #warning "暂时const false"
+#warning "暂时const false"
     const uint32_t _autoCSPPeriod = 0;
     int32_t _autoCurrent;
     float _autoVelocity;

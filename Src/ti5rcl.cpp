@@ -30,13 +30,11 @@ bool ti5Robot::linear_move(const Frame *end_pos)
     float v;
     for (int i = 0; i < 6; i++)
     {
-        R1.Joint(i).quickGetCSP(&c,&v,&joint_angle[i]);
     }
-    segmentNr=_chain.getNrOfSegments();
     //求末端位姿
     Frame current_frame;
     ChainFkSolverPos_recursive fwdkin(_chain);
-    fwdkin.JntToCart(JntArray(joint_angle),current_frame);
+//    fwdkin.JntToCart(JntArray(joint_angle),current_frame);
     //与目标Frame比较
 
     //开始插补
@@ -50,3 +48,5 @@ bool ti5Robot::linear_move(const Frame *end_pos)
 
 
 }
+
+
