@@ -20,10 +20,12 @@ using namespace KDL;
 using namespace std;
 using namespace ti5rcl;
 using namespace ti5mcl;
-ti5Robot R1{};
 
 int main(int argc,char** argv){
     Frame x;
+//    R1._joint[0]->home();
+//    R1._joint[1]->home();
+ti5Robot R1{};
     R1.linear_move(&x);
     this_thread::sleep_for(chrono::seconds(1));
 }

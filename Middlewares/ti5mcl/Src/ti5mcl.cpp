@@ -238,7 +238,7 @@ bool ti5Motor::writeParameter(
     {
         ssSend << setw(2) << setfill('0') << hex << static_cast<int>(i) << " ";
     }
-    tlog_debug << "Sent message!" << ssSend.str() << endl;
+    tlog_debug << "Sent "<< to_string(_canFrameSend.can_dlc) <<"bytes message!" << ssSend.str()  << endl;
     lock_guard<mutex> lock(canMutex);
     try
     {
@@ -280,7 +280,7 @@ bool ti5Motor::writeParameter(
     {
         ssSend << setw(2) << setfill('0') << hex << static_cast<int>(i) << " ";
     }
-    tlog_debug << "Sent message!" << ssSend.str() << endl;
+    tlog_debug << "Sent "<< to_string(_canFrameSend.can_dlc) <<"bytes message!" << ssSend.str()  << endl;
     lock_guard<mutex> lock(canMutex);
     try
     {
@@ -322,7 +322,7 @@ bool ti5Motor::writeParameter(
     {
         ssSend << setw(2) << setfill('0') << hex << static_cast<int>(i) << " ";
     }
-    tlog_debug << "Sent message!" << ssSend.str() << endl;
+    tlog_debug << "Sent "<< to_string(_canFrameSend.can_dlc) <<"bytes message!" << ssSend.str()  << endl;
     lock_guard<mutex> lock(canMutex);
     try
     {
@@ -366,7 +366,7 @@ bool ti5Motor::writeParameter(
     {
         ssSend << setw(2) << setfill('0') << hex << static_cast<int>(i) << " ";
     }
-    tlog_debug << "Sent message!" << ssSend.str() << endl;
+    tlog_debug << "Sent "<< to_string(_canFrameSend.can_dlc) <<"bytes message!" << ssSend.str()  << endl;
     lock_guard<mutex> lock(canMutex);
     try
     {
@@ -414,7 +414,7 @@ bool ti5Motor::writeParameter(
     {
         ssSend << setw(2) << setfill('0') << hex << static_cast<int>(i) << " ";
     }
-    tlog_debug << "Sent message!" << ssSend.str() << endl;
+    tlog_debug << "Sent "<< to_string(_canFrameSend.can_dlc) <<"bytes message!" << ssSend.str()  << endl;
     lock_guard<mutex> lock(canMutex);
 
     try
@@ -448,7 +448,7 @@ bool ti5Motor::readParameter(
     {
         ssSend << setw(2) << setfill('0') << hex << static_cast<int>(i) << " ";
     }
-    tlog_debug << "Sent message!" << ssSend.str() << endl;
+    tlog_debug << "Sent "<< to_string(_canFrameSend.can_dlc) <<"bytes message!" << ssSend.str()  << endl;
     lock_guard<mutex> lock(canMutex);
     try
     {
@@ -482,7 +482,7 @@ bool ti5Motor::readParameter(
         {
             ssReceived << setw(2) << setfill('0') << hex << static_cast<int>(i) << " ";
         }
-        tlog_debug << "Received message!" << ssReceived.str() << endl;
+        tlog_debug << "Received "<< to_string(_canFrameReceive.can_dlc) <<"bytes message!" << ssReceived.str() << endl;
         return false;
     }
     stringstream ssReceived;
@@ -490,7 +490,7 @@ bool ti5Motor::readParameter(
     {
         ssReceived << setw(2) << setfill('0') << hex << static_cast<int>(i) << " ";
     }
-    tlog_debug << "Received message!" << ssReceived.str() << endl;
+    tlog_debug << "Received "<< to_string(_canFrameReceive.can_dlc) <<"bytes message!" << ssReceived.str() << endl;
     *value = static_cast<int32_t>(_canFrameReceive.data[1]) |
              (static_cast<int32_t>(_canFrameReceive.data[2]) << 8) |
              (static_cast<int32_t>(_canFrameReceive.data[3]) << 16) |
@@ -510,7 +510,7 @@ bool ti5Motor::readParameter(
     {
         ssSend << setw(2) << setfill('0') << hex << static_cast<int>(i) << " ";
     }
-    tlog_debug << "Sent message!" << ssSend.str() << endl;
+    tlog_debug << "Sent "<< to_string(_canFrameSend.can_dlc) <<"bytes message!" << ssSend.str()  << endl;
     lock_guard<mutex> lock(canMutex);
     try
     {
@@ -543,7 +543,7 @@ bool ti5Motor::readParameter(
         {
             ssReceived << setw(2) << setfill('0') << hex << static_cast<int>(i) << " ";
         }
-        tlog_debug << "Received message!" << ssReceived.str() << endl;
+        tlog_debug << "Received "<< to_string(_canFrameReceive.can_dlc) <<"bytes message!" << ssReceived.str() << endl;
         return false;
     }
     stringstream ssReceived;
@@ -551,7 +551,7 @@ bool ti5Motor::readParameter(
     {
         ssReceived << setw(2) << setfill('0') << hex << static_cast<int>(i) << " ";
     }
-    tlog_debug << "Received message!" << ssReceived.str() << endl;
+    tlog_debug << "Received "<< to_string(_canFrameReceive.can_dlc) <<"bytes message!" << ssReceived.str() << endl;
     *value1 = static_cast<int16_t>(_canFrameReceive.data[0]) |
               (static_cast<int16_t>(_canFrameReceive.data[1]) << 8);
 
@@ -591,7 +591,7 @@ bool ti5Motor::writeAndReadParameter(
     {
         ssSend << setw(2) << setfill('0') << hex << static_cast<int>(i) << " ";
     }
-    tlog_debug << "Sent message!" << ssSend.str() << endl;
+    tlog_debug << "Sent "<< to_string(_canFrameSend.can_dlc) <<"bytes message!" << ssSend.str()  << endl;
     lock_guard<mutex> lock(canMutex);
     try
     {
@@ -625,7 +625,7 @@ bool ti5Motor::writeAndReadParameter(
         {
             ssReceived << setw(2) << setfill('0') << hex << static_cast<int>(i) << " ";
         }
-        tlog_debug << "Received message!" << ssReceived.str() << endl;
+        tlog_debug << "Received "<< to_string(_canFrameReceive.can_dlc) <<"bytes message!" << ssReceived.str() << endl;
         return false;
     }
     stringstream ssReceived;
@@ -633,7 +633,7 @@ bool ti5Motor::writeAndReadParameter(
     {
         ssReceived << setw(2) << setfill('0') << hex << static_cast<int>(i) << " ";
     }
-    tlog_debug << "Received message!" << ssReceived.str() << endl;
+    tlog_debug << "Received "<< to_string(_canFrameReceive.can_dlc) <<"bytes message!" << ssReceived.str() << endl;
     *value1 = (_canFrameReceive.data[0]) |
               (_canFrameReceive.data[1] << 8);
     *value2 = (_canFrameReceive.data[2]) |

@@ -37,11 +37,13 @@
 #define _urdfPath "/home/runyu/urdf/arm5.urdf"
 #define chainRoot "base_link"
 #define chainTip "Empty_Link5"
+
 namespace ti5rcl
 {
 using namespace std;
 using namespace ti5mcl;
 using namespace KDL;
+
 class DLLEXPORT_API ti5Robot
 {
 public: //机械臂基础
@@ -49,7 +51,6 @@ public: //机械臂基础
     {
         ti5Motor::reductionRatio reductionRatioTab[8]=
         {
-            ti5Motor::reductionRatio1,
             ti5Motor::reductionRatio101,
             ti5Motor::reductionRatio101,
             ti5Motor::reductionRatio81,
@@ -67,14 +68,22 @@ public: //机械臂基础
         _nrOfJoints = _tree.getNrOfJoints();
         _nrOfSegments = _tree.getNrOfSegments();
         tlog_info << "Chain from chainRoot to chainTip has " <<  to_string(_nrOfJoints) << " joints and " << to_string(_nrOfSegments) << " segments." << endl;
-        for(uint8_t i=1;i<=_nrOfJoints;i++)
+        _joint.resize(7);
+        for(uint8_t i=0;i<_nrOfJoints;i++)
         {
-            _joint.push_back(new ti5Motor(i,reductionRatioTab[i]));
+            _joint[i]=new ti5Motor(i,reductionRatioTab[i]);
+            if (_joint[i] == nullptr)
+            {
+                std::cerr << "Error: _joint[" << i << "] is null." << std::endl;
+                continue;
+            }
+
         }
+
     }
     ~ti5Robot() = default;
 public: //机械臂运动
-bool linear_move(const Frame *end_pos);
+    bool linear_move(const Frame *end_pos);
 //	bool jog(int aj_num, MoveMode move_mode, CoordType coord_type, double vel_cmd, double pos_cmd);
 //	bool jog_stop(int num);
 //	bool joint_move(const JointValue *joint_pos, MoveMode move_mode, BOOL is_block, double speed, double acc = 90, double tol = 0, const OptionalCond *option_cond= nullptr);
@@ -108,7 +117,7 @@ public: //扩展1
 
 
 
-private:
+public:
     Chain _chain;
     uint8_t _nrOfJoints;
     uint8_t _nrOfSegments;

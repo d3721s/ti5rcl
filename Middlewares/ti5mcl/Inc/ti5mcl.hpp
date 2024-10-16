@@ -101,6 +101,7 @@ public:
 //            }
 //        });
         // thread autoCSPThread([this]() mutable{});
+        #warning jianchadianjilianjie
         tlog_info << "ti5Motor " << to_string(_canId) << "has been created!" << endl;
     }
 //    ti5Motor(const ti5Motor &other):_canId(other._canId), _reductionRatio(other._reductionRatio) {};

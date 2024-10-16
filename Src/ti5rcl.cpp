@@ -16,25 +16,30 @@
 #include <stdio.h>
 #include <iostream>
 
-
 using namespace KDL;
 using namespace ti5rcl;
 
 bool ti5Robot::linear_move(const Frame *end_pos)
 {
     //获取所有关节角度
-    #warning TODO:改为类方法访问
-    float joint_angle[6] = {0};
-    uint32_t c;
+    JntArray q(_nrOfJoints);
+    int32_t c;
     float v;
-    for (int i = 0; i < 6; i++)
-    {
 
+    for (int i = 0; i < 5; i++)
+    {
+        if (_joint[i] == nullptr)
+        {
+            tlog_error << "Error: _joint[" << i << "] is null." << endl;
+        }
+        else
+        _joint[i]->quickGetCSP(&c,&v,&q(i));
     }
     //求末端位姿
-    Frame current_frame;
     ChainFkSolverPos_recursive fwdkin(_chain);
-//    fwdkin.JntToCart(JntArray(joint_angle),current_frame);
+    fwdkin.JntToCart(q,pos_goal);
+    KDL::JntArray q_init(n);
+    KDL::JntArray q_sol(n);
     //与目标Frame比较
 
     //开始插补
@@ -46,7 +51,7 @@ bool ti5Robot::linear_move(const Frame *end_pos)
     //依次运动
 
 
-
+    return true;
 }
 
 

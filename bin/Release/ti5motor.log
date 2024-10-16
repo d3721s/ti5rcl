@@ -1,39 +1,183 @@
-[2024-10-15 00:43:30,139][ INFO] ti5Motor id0has been created!
-[2024-10-15 00:43:30,139][ INFO] ti5Motor id1has been created!
-[2024-10-15 00:43:30,139][ INFO] ti5Motor id2has been created!
-[2024-10-15 00:43:30,139][ INFO] ti5Motor id3has been created!
-[2024-10-15 00:43:30,139][ INFO] ti5Motor id4has been created!
-[2024-10-15 00:43:54,565][ INFO] ti5Motor id1has been created!
-[2024-10-15 00:43:54,565][ INFO] ti5Motor id2has been created!
-[2024-10-15 00:43:54,565][ INFO] ti5Motor id3has been created!
-[2024-10-15 00:43:54,565][ INFO] ti5Motor id4has been created!
-[2024-10-15 00:44:28,988][ INFO] ti5Motor id1has been created!
-[2024-10-15 00:44:28,988][ INFO] ti5Motor id2has been created!
-[2024-10-15 00:44:28,988][ INFO] ti5Motor id3has been created!
-[2024-10-15 00:44:28,988][ INFO] ti5Motor id4has been created!
-[2024-10-15 00:44:28,988][ INFO] ti5Motor id5has been created!
-[2024-10-15 17:46:41,633][ INFO] ti5Motor id1has been created!
-[2024-10-15 17:46:41,633][ INFO] ti5Motor id2has been created!
-[2024-10-15 17:46:41,633][ INFO] ti5Motor id3has been created!
-[2024-10-15 17:46:41,633][ INFO] ti5Motor id4has been created!
-[2024-10-15 17:46:41,633][ INFO] ti5Motor id5has been created!
-[2024-10-15 17:49:18,986][ INFO] ti5Motor 1has been created!
-[2024-10-15 17:49:18,986][ INFO] ti5Motor 2has been created!
-[2024-10-15 17:49:18,987][ INFO] ti5Motor 3has been created!
-[2024-10-15 17:49:18,987][ INFO] ti5Motor 4has been created!
-[2024-10-15 17:49:18,987][ INFO] ti5Motor 5has been created!
-[2024-10-15 17:50:13,087][ INFO] ti5Motor 1has been created!
-[2024-10-15 17:50:13,087][ INFO] ti5Motor 2has been created!
-[2024-10-15 17:50:13,087][ INFO] ti5Motor 3has been created!
-[2024-10-15 17:50:13,087][ INFO] ti5Motor 4has been created!
-[2024-10-15 17:50:13,087][ INFO] ti5Motor 5has been created!
-[2024-10-15 17:56:32,125][ INFO] ti5Motor 1has been created!
-[2024-10-15 17:56:32,125][ INFO] ti5Motor 2has been created!
-[2024-10-15 17:56:32,125][ INFO] ti5Motor 3has been created!
-[2024-10-15 17:56:32,125][ INFO] ti5Motor 4has been created!
-[2024-10-15 17:56:32,125][ INFO] ti5Motor 5has been created!
-[2024-10-15 17:57:36,863][ INFO] ti5Motor 1has been created!
-[2024-10-15 17:57:36,863][ INFO] ti5Motor 2has been created!
-[2024-10-15 17:57:36,863][ INFO] ti5Motor 3has been created!
-[2024-10-15 17:57:36,863][ INFO] ti5Motor 4has been created!
-[2024-10-15 17:57:36,863][ INFO] ti5Motor 5has been created!
+[2024-10-15 18:44:47,634][ INFO] ti5Motor 1has been created!
+[2024-10-15 18:44:47,634][ INFO] ti5Motor 2has been created!
+[2024-10-15 18:44:47,634][ INFO] ti5Motor 3has been created!
+[2024-10-15 18:44:47,634][ INFO] ti5Motor 4has been created!
+[2024-10-15 18:44:47,634][ INFO] ti5Motor 5has been created!
+[2024-10-15 18:44:47,634][ INFO] Homing!
+[2024-10-15 18:44:47,634][ INFO] Moving to 0.000000 with velocity 0.523599
+[2024-10-15 18:44:47,634][DEBUG] Sent message!58 00 00 00 00 49 03 00 
+[2024-10-15 18:44:47,634][ INFO] Homing!
+[2024-10-15 18:44:47,634][ INFO] Moving to 0.000000 with velocity 0.523599
+[2024-10-15 18:44:47,634][DEBUG] Sent message!58 00 00 00 00 49 03 00 
+[2024-10-15 18:45:04,045][ INFO] ti5Motor 1has been created!
+[2024-10-15 18:45:04,045][ INFO] ti5Motor 2has been created!
+[2024-10-15 18:45:04,045][ INFO] ti5Motor 3has been created!
+[2024-10-15 18:45:04,045][ INFO] ti5Motor 4has been created!
+[2024-10-15 18:45:04,045][ INFO] ti5Motor 5has been created!
+[2024-10-15 18:45:04,045][ INFO] Homing!
+[2024-10-15 18:45:04,045][ INFO] Moving to 0.000000 with velocity 0.523599
+[2024-10-15 18:45:04,045][DEBUG] Sent message!58 00 00 00 00 49 03 00 
+[2024-10-15 18:45:04,045][ INFO] Homing!
+[2024-10-15 18:45:04,045][ INFO] Moving to 0.000000 with velocity 0.523599
+[2024-10-15 18:45:04,045][DEBUG] Sent message!58 00 00 00 00 49 03 00 
+[2024-10-15 18:46:14,837][ INFO] ti5Motor 1has been created!
+[2024-10-15 18:46:14,837][ INFO] ti5Motor 2has been created!
+[2024-10-15 18:46:14,837][ INFO] ti5Motor 3has been created!
+[2024-10-15 18:46:14,837][ INFO] ti5Motor 4has been created!
+[2024-10-15 18:46:14,837][ INFO] ti5Motor 5has been created!
+[2024-10-15 18:46:14,837][ INFO] Homing!
+[2024-10-15 18:46:14,837][ INFO] Moving to 0.000000 with velocity 0.523599
+[2024-10-15 18:46:14,837][DEBUG] Sent message!58 00 00 00 00 49 03 00 
+[2024-10-15 18:46:14,837][ INFO] Homing!
+[2024-10-15 18:46:14,837][ INFO] Moving to 0.000000 with velocity 0.523599
+[2024-10-15 18:46:14,837][DEBUG] Sent message!58 00 00 00 00 49 03 00 
+[2024-10-15 18:46:48,363][ INFO] ti5Motor 1has been created!
+[2024-10-15 18:46:48,363][ INFO] ti5Motor 2has been created!
+[2024-10-15 18:46:48,363][ INFO] ti5Motor 3has been created!
+[2024-10-15 18:46:48,363][ INFO] ti5Motor 4has been created!
+[2024-10-15 18:46:48,363][ INFO] ti5Motor 5has been created!
+[2024-10-15 18:46:48,363][ INFO] Homing!
+[2024-10-15 18:46:48,363][ INFO] Moving to 0.000000 with velocity 0.523599
+[2024-10-15 18:46:48,363][DEBUG] Sent message!58 00 00 00 00 49 03 00 
+[2024-10-15 18:46:48,363][ INFO] Homing!
+[2024-10-15 18:46:48,363][ INFO] Moving to 0.000000 with velocity 0.523599
+[2024-10-15 18:46:48,363][DEBUG] Sent message!58 00 00 00 00 49 03 00 
+[2024-10-15 19:15:13,547][ INFO] ti5Motor 1has been created!
+[2024-10-15 19:15:13,547][ INFO] ti5Motor 2has been created!
+[2024-10-15 19:15:13,547][ INFO] ti5Motor 3has been created!
+[2024-10-15 19:15:13,547][ INFO] ti5Motor 4has been created!
+[2024-10-15 19:15:13,547][ INFO] ti5Motor 5has been created!
+[2024-10-15 19:15:13,547][ INFO] Homing!
+[2024-10-15 19:15:13,547][ INFO] Moving to 0.000000 with velocity 0.523599
+[2024-10-15 19:15:13,547][DEBUG] Sent message!58 00 00 00 00 49 03 00 
+[2024-10-15 19:15:13,547][ INFO] Homing!
+[2024-10-15 19:15:13,547][ INFO] Moving to 0.000000 with velocity 0.523599
+[2024-10-15 19:15:13,547][DEBUG] Sent message!58 00 00 00 00 49 03 00 
+[2024-10-15 19:15:13,547][ INFO] Homing!
+[2024-10-15 19:15:13,547][ INFO] Moving to 0.000000 with velocity 0.523599
+[2024-10-15 19:15:13,547][DEBUG] Sent message!58 00 00 00 00 a3 02 bf 
+[2024-10-15 19:15:13,547][ INFO] Homing!
+[2024-10-15 19:15:13,547][ INFO] Moving to 0.000000 with velocity 0.523599
+[2024-10-15 19:15:13,547][DEBUG] Sent message!58 00 00 00 00 a3 02 00 
+[2024-10-15 19:15:13,547][ INFO] Homing!
+[2024-10-15 19:15:13,547][ INFO] Moving to 0.000000 with velocity 0.523599
+[2024-10-15 19:15:13,547][DEBUG] Sent message!58 00 00 00 00 a9 01 00 
+[2024-10-15 19:26:36,002][ INFO] ti5Motor 1has been created!
+[2024-10-15 19:26:36,002][ INFO] ti5Motor 2has been created!
+[2024-10-15 19:26:36,002][ INFO] ti5Motor 3has been created!
+[2024-10-15 19:26:36,002][ INFO] ti5Motor 4has been created!
+[2024-10-15 19:26:36,002][ INFO] ti5Motor 5has been created!
+[2024-10-15 19:28:01,017][ INFO] ti5Motor 1has been created!
+[2024-10-15 19:28:01,017][ INFO] ti5Motor 2has been created!
+[2024-10-15 19:28:01,018][ INFO] ti5Motor 3has been created!
+[2024-10-15 19:28:01,018][ INFO] ti5Motor 4has been created!
+[2024-10-15 19:28:01,018][ INFO] ti5Motor 5has been created!
+[2024-10-15 19:28:01,018][ INFO] Homing!
+[2024-10-15 19:28:01,018][ INFO] Moving to 0.000000 with velocity 0.523599
+[2024-10-15 20:04:10,304][ INFO] ti5Motor 0has been created!
+[2024-10-15 20:04:10,304][ INFO] ti5Motor 1has been created!
+[2024-10-15 20:04:10,304][ INFO] ti5Motor 2has been created!
+[2024-10-15 20:04:10,304][ INFO] ti5Motor 3has been created!
+[2024-10-15 20:04:10,304][ INFO] ti5Motor 4has been created!
+[2024-10-15 20:04:10,304][ INFO] Resetting!
+[2024-10-15 20:04:10,304][DEBUG] Sent message!0b 6b 35 00 00 00 00 00 
+[2024-10-15 20:04:10,304][ INFO] Resetting!
+[2024-10-15 20:04:10,304][DEBUG] Sent message!0b 00 00 00 00 00 00 00 
+[2024-10-15 20:04:10,304][ INFO] Resetting!
+[2024-10-15 20:04:10,304][DEBUG] Sent message!0b ae 4e 1e 00 fb 0b bf 
+[2024-10-15 20:04:10,304][ INFO] Resetting!
+[2024-10-15 20:04:10,304][DEBUG] Sent message!0b 7f 6d d4 72 55 00 00 
+[2024-10-15 20:04:10,304][ INFO] Resetting!
+[2024-10-15 20:04:10,304][DEBUG] Sent message!0b 5e ae b4 fd 7f 00 00 
+[2024-10-15 20:06:53,662][ INFO] ti5Motor 0has been created!
+[2024-10-15 20:06:53,662][ INFO] ti5Motor 1has been created!
+[2024-10-15 20:06:53,662][ INFO] ti5Motor 2has been created!
+[2024-10-15 20:06:53,662][ INFO] ti5Motor 3has been created!
+[2024-10-15 20:06:53,662][ INFO] ti5Motor 4has been created!
+[2024-10-15 20:06:53,662][ INFO] Resetting!
+[2024-10-15 20:06:53,662][DEBUG] 1Sent message!0b 6b 35 00 00 00 00 00 
+[2024-10-15 20:06:53,662][ INFO] Resetting!
+[2024-10-15 20:06:53,662][DEBUG] 1Sent message!0b 00 00 00 00 00 00 00 
+[2024-10-15 20:06:53,662][ INFO] Resetting!
+[2024-10-15 20:06:53,662][DEBUG] 1Sent message!0b ae 4e 1e 00 fb 0b bf 
+[2024-10-15 20:06:53,662][ INFO] Resetting!
+[2024-10-15 20:06:53,662][DEBUG] 1Sent message!0b 5f 1b 24 16 56 00 00 
+[2024-10-15 20:06:53,662][ INFO] Resetting!
+[2024-10-15 20:06:53,662][DEBUG] 1Sent message!0b 94 34 e2 ff 7f 00 00 
+[2024-10-15 20:11:33,276][ INFO] ti5Motor 0has been created!
+[2024-10-15 20:11:33,276][ INFO] ti5Motor 1has been created!
+[2024-10-15 20:11:33,276][ INFO] ti5Motor 2has been created!
+[2024-10-15 20:11:33,276][ INFO] ti5Motor 3has been created!
+[2024-10-15 20:11:33,276][ INFO] ti5Motor 4has been created!
+[2024-10-15 20:11:33,276][ INFO] Resetting!
+[2024-10-15 20:11:33,276][DEBUG] Sent 1bytes message!0b 6b 35 00 00 00 00 00 
+[2024-10-15 20:11:33,276][ INFO] Resetting!
+[2024-10-15 20:11:33,276][DEBUG] Sent 1bytes message!0b 00 00 00 00 00 00 00 
+[2024-10-15 20:11:33,276][ INFO] Resetting!
+[2024-10-15 20:11:33,276][DEBUG] Sent 1bytes message!0b ae 4e 1e 00 fb 0b bf 
+[2024-10-15 20:11:33,276][ INFO] Resetting!
+[2024-10-15 20:11:33,276][DEBUG] Sent 1bytes message!0b 9f b1 68 f6 55 00 00 
+[2024-10-15 20:11:33,276][ INFO] Resetting!
+[2024-10-15 20:11:33,276][DEBUG] Sent 1bytes message!0b 93 da c6 fc 7f 00 00 
+[2024-10-15 20:15:13,869][ INFO] ti5Motor 0has been created!
+[2024-10-15 20:15:13,869][ INFO] ti5Motor 1has been created!
+[2024-10-15 20:15:13,869][ INFO] ti5Motor 2has been created!
+[2024-10-15 20:15:13,869][ INFO] ti5Motor 3has been created!
+[2024-10-15 20:15:13,869][ INFO] ti5Motor 4has been created!
+[2024-10-15 20:15:13,869][ INFO] Resetting!
+[2024-10-15 20:15:13,869][DEBUG] Sent 1bytes message!0b 6b 35 00 00 00 00 00 
+[2024-10-15 20:15:13,869][ INFO] Resetting!
+[2024-10-15 20:15:13,869][DEBUG] Sent 1bytes message!0b 00 00 00 00 00 00 00 
+[2024-10-15 20:15:13,869][ INFO] Resetting!
+[2024-10-15 20:15:13,869][DEBUG] Sent 1bytes message!0b ae 4e 1e 00 fb 0b bf 
+[2024-10-15 20:15:13,869][ INFO] Resetting!
+[2024-10-15 20:15:13,869][DEBUG] Sent 1bytes message!0b 0f e5 c3 85 55 00 00 
+[2024-10-15 20:15:13,869][ INFO] Resetting!
+[2024-10-15 20:15:13,869][DEBUG] Sent 1bytes message!0b df e8 3c fd 7f 00 00 
+[2024-10-15 20:46:08,310][ INFO] ti5Motor 0has been created!
+[2024-10-15 20:46:08,310][ INFO] ti5Motor 1has been created!
+[2024-10-15 20:46:08,310][ INFO] ti5Motor 2has been created!
+[2024-10-15 20:46:08,310][ INFO] ti5Motor 3has been created!
+[2024-10-15 20:46:08,310][ INFO] ti5Motor 4has been created!
+[2024-10-15 20:46:08,310][ INFO] Getting CSP!
+[2024-10-15 20:46:08,310][DEBUG] Sent 1bytes message!41 6b 35 00 00 00 00 00 
+[2024-10-15 20:46:12,148][ INFO] ti5Motor 0has been created!
+[2024-10-15 20:46:12,148][ INFO] ti5Motor 1has been created!
+[2024-10-15 20:46:12,148][ INFO] ti5Motor 2has been created!
+[2024-10-15 20:46:12,148][ INFO] ti5Motor 3has been created!
+[2024-10-15 20:46:12,148][ INFO] ti5Motor 4has been created!
+[2024-10-15 20:46:12,148][ INFO] Getting CSP!
+[2024-10-15 20:46:12,148][DEBUG] Sent 1bytes message!41 6b 35 00 00 00 00 00 
+[2024-10-15 20:46:15,152][ERROR] Receive Timeout! 
+[2024-10-15 20:46:15,152][ INFO] Getting CSP!
+[2024-10-15 20:46:15,152][DEBUG] Sent 1bytes message!41 00 00 00 00 00 00 00 
+[2024-10-15 20:46:18,155][ERROR] Receive Timeout! 
+[2024-10-15 20:46:18,155][ INFO] Getting CSP!
+[2024-10-15 20:46:18,155][DEBUG] Sent 1bytes message!41 ae 4e 1e 00 fb 0b bf 
+[2024-10-15 20:46:21,159][ERROR] Receive Timeout! 
+[2024-10-15 20:46:21,159][ INFO] Getting CSP!
+[2024-10-15 20:46:21,159][DEBUG] Sent 1bytes message!41 5f 2a ec 08 56 00 00 
+[2024-10-15 20:46:24,162][ERROR] Receive Timeout! 
+[2024-10-15 20:46:24,162][ INFO] Getting CSP!
+[2024-10-15 20:46:24,162][DEBUG] Sent 1bytes message!41 d3 cb 39 fe 7f 00 00 
+[2024-10-15 20:46:27,166][ERROR] Receive Timeout! 
+[2024-10-15 22:24:31,786][ INFO] ti5Motor 0has been created!
+[2024-10-15 22:24:31,786][ INFO] ti5Motor 1has been created!
+[2024-10-15 22:24:31,786][ INFO] ti5Motor 2has been created!
+[2024-10-15 22:24:31,786][ INFO] ti5Motor 3has been created!
+[2024-10-15 22:24:31,786][ INFO] ti5Motor 4has been created!
+[2024-10-15 22:24:31,786][ INFO] Getting CSP!
+[2024-10-15 22:24:31,786][DEBUG] Sent 1bytes message!41 6b 35 00 00 00 00 00 
+[2024-10-15 22:24:34,789][ERROR] Receive Timeout! 
+[2024-10-15 22:24:34,790][ INFO] Getting CSP!
+[2024-10-15 22:24:34,790][DEBUG] Sent 1bytes message!41 00 00 00 00 00 00 00 
+[2024-10-15 22:24:37,793][ERROR] Receive Timeout! 
+[2024-10-15 22:24:37,793][ INFO] Getting CSP!
+[2024-10-15 22:24:37,793][DEBUG] Sent 1bytes message!41 ae 4e 1e 00 fb 0b bf 
+[2024-10-15 22:24:40,797][ERROR] Receive Timeout! 
+[2024-10-15 22:24:40,797][ INFO] Getting CSP!
+[2024-10-15 22:24:40,797][DEBUG] Sent 1bytes message!41 1f ce 69 31 56 00 00 
+[2024-10-15 22:24:43,801][ERROR] Receive Timeout! 
+[2024-10-15 22:24:43,801][ INFO] Getting CSP!
+[2024-10-15 22:24:43,801][DEBUG] Sent 1bytes message!41 97 8e fa ff 7f 00 00 
+[2024-10-15 22:24:46,805][ERROR] Receive Timeout! 
