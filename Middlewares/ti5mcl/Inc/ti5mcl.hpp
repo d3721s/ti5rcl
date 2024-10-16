@@ -101,7 +101,7 @@ public:
 //            }
 //        });
         // thread autoCSPThread([this]() mutable{});
-        tlog_info << "ti5Motor id" << to_string(_canId) << "has been created!" << endl;
+        tlog_info << "ti5Motor " << to_string(_canId) << "has been created!" << endl;
     }
 //    ti5Motor(const ti5Motor &other):_canId(other._canId), _reductionRatio(other._reductionRatio) {};
 //    ti5Motor &operator=(const ti5Motor &other)

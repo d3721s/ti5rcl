@@ -47,8 +47,9 @@ class DLLEXPORT_API ti5Robot
 public: //机械臂基础
     ti5Robot()
     {
-        ti5Motor::reductionRatio reductionRatioTab[7]=
+        ti5Motor::reductionRatio reductionRatioTab[8]=
         {
+            ti5Motor::reductionRatio1,
             ti5Motor::reductionRatio101,
             ti5Motor::reductionRatio101,
             ti5Motor::reductionRatio81,
@@ -66,9 +67,9 @@ public: //机械臂基础
         _nrOfJoints = _tree.getNrOfJoints();
         _nrOfSegments = _tree.getNrOfSegments();
         tlog_info << "Chain from chainRoot to chainTip has " <<  to_string(_nrOfJoints) << " joints and " << to_string(_nrOfSegments) << " segments." << endl;
-        for(uint8_t i=0;i<_nrOfJoints;i++)
+        for(uint8_t i=1;i<=_nrOfJoints;i++)
         {
-            _joint.push_back(ti5Motor(_chain.getSegment(i).getJoint().getJointId(),reductionRatioTab[i]));
+            _joint.push_back(new ti5Motor(i,reductionRatioTab[i]));
         }
     }
     ~ti5Robot() = default;
@@ -112,7 +113,8 @@ private:
     uint8_t _nrOfJoints;
     uint8_t _nrOfSegments;
     Tree _tree;
-    vector<ti5Motor> _joint;
+    vector<ti5Motor*> _joint;
+
 public:
 
 

@@ -20,7 +20,6 @@
 using namespace KDL;
 using namespace ti5rcl;
 
-ti5Robot R1;
 bool ti5Robot::linear_move(const Frame *end_pos)
 {
     //获取所有关节角度
@@ -30,6 +29,7 @@ bool ti5Robot::linear_move(const Frame *end_pos)
     float v;
     for (int i = 0; i < 6; i++)
     {
+
     }
     //求末端位姿
     Frame current_frame;
