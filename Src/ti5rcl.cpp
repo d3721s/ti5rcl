@@ -35,6 +35,11 @@ bool ti5Robot::linear_move(const Frame *end_pos)
         else
         _joint[i]->quickGetCSP(&c,&v,&q(i));
     }
+    qNow(0) = 0;
+    qNow(1) = 0;
+    qNow(2) = 0;
+    qNow(3) = 0;
+    qNow(4) = 0;
     //求末端位姿
     ChainFkSolverPos_recursive fwdkin(_chain);
     fwdkin.JntToCart(q,pos_goal);
