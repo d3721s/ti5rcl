@@ -22,7 +22,7 @@ using namespace ti5rcl;
 bool ti5Robot::linear_move(const Frame *end_pos)
 {
     //获取所有关节角度
-    JntArray q(_nrOfJoints);
+    JntArray qNow(_nrOfJoints);
     int32_t c;
     double v;
 
@@ -32,8 +32,8 @@ bool ti5Robot::linear_move(const Frame *end_pos)
         {
             tlog_error << "Error: _joint[" << i << "] is null." << endl;
         }
-        else
-        _joint[i]->quickGetCSP(&c,&v,&q(i));
+//        else
+//        _joint[i]->quickGetCSP(&c,&v,&qNow(i));
     }
     qNow(0) = 0;
     qNow(1) = 0;
@@ -41,10 +41,10 @@ bool ti5Robot::linear_move(const Frame *end_pos)
     qNow(3) = 0;
     qNow(4) = 0;
     //求末端位姿
+    Frame frameNow;
     ChainFkSolverPos_recursive fwdkin(_chain);
-    fwdkin.JntToCart(q,pos_goal);
-    KDL::JntArray q_init(n);
-    KDL::JntArray q_sol(n);
+    fwdkin.JntToCart(qNow,frameNow);
+    tlog_info << "frameNow " << frameNow.p.x() << frameNow.p.y() << frameNow.p.z() << endl;
     //与目标Frame比较
 
     //开始插补
