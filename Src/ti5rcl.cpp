@@ -24,7 +24,7 @@ bool ti5Robot::linear_move(const Frame *end_pos)
     //获取所有关节角度
     JntArray q(_nrOfJoints);
     int32_t c;
-    float v;
+    double v;
 
     for (int i = 0; i < 5; i++)
     {

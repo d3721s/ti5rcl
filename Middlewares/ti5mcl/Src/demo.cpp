@@ -4,8 +4,8 @@ using namespace std;
 int main()
 {
     uint32_t c;
-    float v;
-    float p;
+    double v;
+    double p;
     ti5Motor M1(1, ti5Motor::reductionRatio101);
     ti5Motor M2(2, ti5Motor::reductionRatio101);
     ti5Motor M3(3, ti5Motor::reductionRatio81);

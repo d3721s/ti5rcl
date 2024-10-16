@@ -29,8 +29,8 @@ bool ti5Motor::halt()
     return writeParameter(setStopModeCode1);
 }
 
-bool ti5Motor::moveAbsolute(float position,
-                            float velocity)
+bool ti5Motor::moveAbsolute(double position,
+                            double velocity)
 {
     tlog_info << "Moving to " << to_string(position) << " with velocity " << to_string(velocity) << endl;
     return writeParameter(setPositionAndVelocityCode,
@@ -39,8 +39,8 @@ bool ti5Motor::moveAbsolute(float position,
                           velocity * static_cast<uint8_t>(_reductionRatio) * 50 / M_PI);
 }
 
-bool ti5Motor::moveRelative(float distance,
-                            float velocity)
+bool ti5Motor::moveRelative(double distance,
+                            double velocity)
 {
     tlog_info << "Moving " << to_string(distance) << " with velocity " << to_string(velocity) << endl;
     if (!_autoCSPStatus)
@@ -58,14 +58,14 @@ bool ti5Motor::moveRelative(float distance,
                           M_PI,
                           velocity * static_cast<uint8_t>(_reductionRatio) * 50 / M_PI);
 }
-bool ti5Motor::moveVelocity(float velocity)
+bool ti5Motor::moveVelocity(double velocity)
 {
     tlog_info << "Moving with velocity " << to_string(velocity) << endl;
     if (!writeParameter(setVelocityModeCode, velocity * static_cast<uint8_t>(_reductionRatio) * 50 / M_PI))
         return false;
     return true;
 }
-bool ti5Motor::moveVelocity(float position, float velocity)
+bool ti5Motor::moveVelocity(double position, double velocity)
 {
     tlog_info << "Moving with velocity " << to_string(velocity) << endl;
     if (!writeParameter(setVelocityModeCode, velocity * static_cast<uint8_t>(_reductionRatio) * 50 / M_PI))
@@ -74,27 +74,27 @@ bool ti5Motor::moveVelocity(float position, float velocity)
     return true;
 }
 
-bool ti5Motor::moveJog(float velocity)
+bool ti5Motor::moveJog(double velocity)
 {
     tlog_info << "Joging with velocity " << to_string(velocity) << endl;
     return true;
 }
 
-bool ti5Motor::quickSetMaxVelocity(float maxVelocity)
+bool ti5Motor::quickSetMaxVelocity(double maxVelocity)
 {
     tlog_info << "Setting max velocity to " << to_string(maxVelocity) << endl;
     return writeParameter(setMaxPositiveVelocityCode, maxVelocity * static_cast<uint8_t>(_reductionRatio) * 50 / M_PI) && writeParameter(setMaxNegativeVelocityCode, maxVelocity * static_cast<uint8_t>(_reductionRatio) * 50 / M_PI);
 }
 
 bool ti5Motor::quickSetMaxAcceleration(
-    float maxAcceleration)
+    double maxAcceleration)
 {
     tlog_info << "Setting max acceleration to " << to_string(maxAcceleration) << endl;
     return writeParameter(setMaxPositiveAccelerationCode, maxAcceleration * static_cast<uint8_t>(_reductionRatio) * 50 / M_PI) && writeParameter(setMaxNegativeAccelerationCode, maxAcceleration * static_cast<uint8_t>(_reductionRatio) * 50 / M_PI);
 }
 
 bool ti5Motor::quickSetMaxPosition(
-    float maxPosition)
+    double maxPosition)
 {
     tlog_info << "Setting max position to " << to_string(maxPosition) << endl;
 
@@ -102,13 +102,13 @@ bool ti5Motor::quickSetMaxPosition(
 }
 
 bool ti5Motor::quickSetMinPosition(
-    float minPosition)
+    double minPosition)
 {
     tlog_info << "Setting min position to " << to_string(minPosition) << endl;
     return writeParameter(setMaxNegativePositionCode, minPosition * static_cast<uint8_t>(_reductionRatio) * 32768 / M_PI);
 }
 
-bool ti5Motor::quickGetCSP(int32_t* _current,float* _speed,float* _position)
+bool ti5Motor::quickGetCSP(int32_t* _current,double* _speed,double* _position)
 {
     tlog_info << "Getting CSP!" << endl;
     if (!readParameter(getCurrentVelocityPositionCode,&_currentRaw,&_velocityRaw,&_positionRaw))
@@ -120,7 +120,7 @@ bool ti5Motor::quickGetCSP(int32_t* _current,float* _speed,float* _position)
     return true;
 }
 
-bool ti5Motor::quickGetMaxVelocity(float *maxVelocity)
+bool ti5Motor::quickGetMaxVelocity(double *maxVelocity)
 {
     tlog_info << "Getting max velocity!" << endl;
     int32_t _maxVelocityRaw;
@@ -132,7 +132,7 @@ bool ti5Motor::quickGetMaxVelocity(float *maxVelocity)
 }
 
 bool ti5Motor::quickGetMaxAcceleration(
-    float *maxAcceleration)
+    double *maxAcceleration)
 {
     int32_t _maxAccelerationRaw;
     tlog_info << "Getting max acceleration!" << endl;
@@ -145,7 +145,7 @@ bool ti5Motor::quickGetMaxAcceleration(
 }
 
 bool ti5Motor::quickGetMaxPosition(
-    float *maxPosition)
+    double *maxPosition)
 {
     int32_t _maxPositionRaw;
     tlog_info << "Getting max position!" << endl;
@@ -157,7 +157,7 @@ bool ti5Motor::quickGetMaxPosition(
 }
 
 bool ti5Motor::quickGetMinPosition(
-    float *minPosition)
+    double *minPosition)
 {
     tlog_info << "Getting min position!" << endl;
     int32_t _minPositionRaw;
@@ -212,17 +212,17 @@ bool ti5Motor::autoMonitor(bool enable)
 //    return true;
 //}
 
-float ti5Motor::autoCurrent() const
+double ti5Motor::autoCurrent() const
 {
     return _autoCurrent;
 }
 
-float ti5Motor::autoVelocity() const
+double ti5Motor::autoVelocity() const
 {
     return _autoVelocity;
 }
 
-float ti5Motor::autoPosition() const
+double ti5Motor::autoPosition() const
 {
     return _autoPosition;
 }

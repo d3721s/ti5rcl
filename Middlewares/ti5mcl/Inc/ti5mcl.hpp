@@ -124,37 +124,37 @@ public:                  // 常用1
     bool reset();        // 清楚错误,建议使用this->autoMonitor()管理错误！
     bool home();         // 回原点
     bool halt();         // 急停
-    bool moveAbsolute(float position = 0,
-                      float velocity = M_PI / 6); // 绝对运动
-    bool moveRelative(float distance = 0,
-                      float velocity = M_PI / 6);                 // 相对运动
-    bool moveVelocity(float velocity = M_PI / 6);                 // 速度运动
-    bool moveVelocity(float position, float velocity = M_PI / 6); // 速度运动
+    bool moveAbsolute(double position = 0,
+                      double velocity = M_PI / 6); // 绝对运动
+    bool moveRelative(double distance = 0,
+                      double velocity = M_PI / 6);                 // 相对运动
+    bool moveVelocity(double velocity = M_PI / 6);                 // 速度运动
+    bool moveVelocity(double position, double velocity = M_PI / 6); // 速度运动
     //    typedef enum
     //    {
     //        DIRECTIONPOSITIVE = 0, // 正向
     //        DIRECTIONNEGATIVE = 1, // 负向
     //    } Direction;               // 方向
 
-    bool moveJog(float velocity = M_PI / 6); // 点动
+    bool moveJog(double velocity = M_PI / 6); // 点动
 public:                                      // 常用2
-    bool quickSetMaxVelocity(float
+    bool quickSetMaxVelocity(double
                              maxVelocity); // 设置最大速度
-    bool quickSetMaxAcceleration(float
+    bool quickSetMaxAcceleration(double
                                  maxAcceleration); // 设置最大加速度
-    bool quickSetMaxPosition(float
+    bool quickSetMaxPosition(double
                              maxPosition); // 设置最大位置
-    bool quickSetMinPosition(float
+    bool quickSetMinPosition(double
                              minPosition); // 设置最小位置
-    bool quickGetCSP(int32_t* _current,float* _speed,float* _position);
+    bool quickGetCSP(int32_t* _current,double* _speed,double* _position);
 
-    bool quickGetMaxVelocity(float *
+    bool quickGetMaxVelocity(double *
                              maxVelocity); // 获取最大速度
-    bool quickGetMaxAcceleration(float *
+    bool quickGetMaxAcceleration(double *
                                  maxAcceleration); // 获取最大加速度
-    bool quickGetMaxPosition(float *
+    bool quickGetMaxPosition(double *
                              maxPosition); // 获取最大位置
-    bool quickGetMinPosition(float *
+    bool quickGetMinPosition(double *
                              minPosition); // 获取最小位置
     bool quickGetEnableStatus(bool *
                               status); // 获取使能状态
@@ -178,9 +178,9 @@ public:                            // 常用3
     // bool autoCurrentVelocityPosition(bool enable,
     //                               uint16_t period); // 自动获取当前电流、速度、位置 单位5ms
     // 破坏标准协议 建议使用quickgetCSP()方法
-    float autoCurrent() const;                      // 当前电流
-    float autoVelocity() const;                        // 当前速度
-    float autoPosition() const;                     // 当前位置
+    double autoCurrent() const;                      // 当前电流
+    double autoVelocity() const;                        // 当前速度
+    double autoPosition() const;                     // 当前位置
 
     //public: // 扩展1
 private: // 未测试，暂时禁用扩展
@@ -377,9 +377,9 @@ private:
 #warning "暂时const false"
     const uint32_t _autoCSPPeriod = 0;
     int32_t _autoCurrent;
-    float _autoVelocity;
+    double _autoVelocity;
     int32_t _autoVelocityRaw;
-    float _autoPosition;
+    double _autoPosition;
     int32_t _autoPositionRaw;
     int16_t _currentRaw;
     int16_t _velocityRaw;
