@@ -19,41 +19,48 @@
 using namespace KDL;
 using namespace ti5rcl;
 
+KDL::Frame linearInterpolation(const KDL::Frame& start, const KDL::Frame& end, double t)
+{
+    KDL::Frame interpolatedPose;
+    interpolatedPose.p = start.p + t * (end.p - start.p); // 位置插值
+    interpolatedPose.M = start.M * (1.0 - t) + end.M * t; // 方向插值（这里是简单的加权平均，可能需要更复杂的方法）
+
+    return interpolatedPose;
+}
+
 bool ti5Robot::linear_move(const Frame *end_pos)
 {
     //获取所有关节角度
+    try
+    {
     JntArray qNow(_nrOfJoints);
     int32_t c;
     double v;
 
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < _nrOfJoints; i++)
     {
-        if (_joint[i] == nullptr)
-        {
-            tlog_error << "Error: _joint[" << i << "] is null." << endl;
-        }
-//        else
-//        _joint[i]->quickGetCSP(&c,&v,&qNow(i));
+
+        _joint[i]->quickGetCSP(&c,&v,&qNow(i));
     }
-    qNow(0) = 0;
-    qNow(1) = 0;
-    qNow(2) = 0;
-    qNow(3) = 0;
-    qNow(4) = 0;
+
     //求末端位姿
     Frame frameNow;
     ChainFkSolverPos_recursive fwdkin(_chain);
     fwdkin.JntToCart(qNow,frameNow);
-    tlog_info << "frameNow " << frameNow.p.x() << frameNow.p.y() << frameNow.p.z() << endl;
-    //与目标Frame比较
+    tlog_info << "frameNow: " << frameNow.p.x() << "," << frameNow.p.y() << "," << frameNow.p.z() << endl;
 
     //开始插补
-
-    //验证插补
+    linearInterpolation(q)
+    //yici验证插补
 
     //依次解算
 
     //依次运动
+    }
+    catch (const Error& e)
+    {
+
+    }
 
 
     return true;

@@ -17,6 +17,9 @@
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
+					<Add library="/opt/ros/foxy/lib/liborocos-kdl.so" />
+					<Add library="/opt/ros/foxy/lib/libkdl_parser.so" />
+					<Add library="/opt/ros/foxy/lib/liburdf.so" />
 				</Linker>
 			</Target>
 			<Target title="so">
@@ -31,6 +34,9 @@
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
+					<Add library="/opt/ros/foxy/lib/liborocos-kdl.so" />
+					<Add library="/opt/ros/foxy/lib/libkdl_parser.so" />
+					<Add library="/opt/ros/foxy/lib/liburdf.so" />
 				</Linker>
 			</Target>
 		</Build>
