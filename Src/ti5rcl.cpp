@@ -54,7 +54,7 @@ bool ti5Robot::linear_move(const Frame *end_pos)
     //开始插补
     Path_Line* path = new Path_Line(frameNow,*end_pos,new RotationalInterpolation_SingleAxis(),0.2);
 
-    //yici验证插补
+    //验证插补
         for (double t = 0.0; t <= 1.0; t += 0.01) {
         Frame pos = path->Pos(t);
         tlog_info << "At time " << t << ", position is (" << pos.p.x() << ", "

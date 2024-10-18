@@ -156,13 +156,7 @@ public:                                      // 常用2
                              maxPosition); // 获取最大位置
     bool quickGetMinPosition(double *
                              minPosition); // 获取最小位置
-    bool quickGetEnableStatus(bool *
-                              status); // 获取使能状态
-    bool quickGetMotorTemperature(int32_t *
-                                  temperature); // 获取电机温度
-    bool quickGetDriverTemperature(int32_t *
-                                   temperature); // 获取驱动器温度
-    bool customGetErrorStatus(uint16_t *
+    bool quickGetErrorStatus(int32_t *
                               errorStatus); // 获取错误状态
     bool quickGetPositionOffset(int32_t *
                                 offset); // 获取位置偏移 /*注意单位*/
