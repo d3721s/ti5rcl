@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -Wno-system-headers   CMakeFiles/patterns.dir/patterns.cpp.o  -o patterns  /usr/lib/x86_64-linux-gnu/libdl.so 

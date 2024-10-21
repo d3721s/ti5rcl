@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -Wno-system-headers   CMakeFiles/atomic.dir/atomic.cpp.o  -o atomic  /usr/lib/x86_64-linux-gnu/libdl.so 

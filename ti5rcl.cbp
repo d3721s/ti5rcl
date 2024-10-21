@@ -20,6 +20,9 @@
 					<Add library="/opt/ros/foxy/lib/liborocos-kdl.so" />
 					<Add library="/opt/ros/foxy/lib/libkdl_parser.so" />
 					<Add library="/opt/ros/foxy/lib/liburdf.so" />
+					<Add library="/opt/ros/foxy/lib/x86_64-linux-gnu/libpinocchio.so" />
+					<Add library="/opt/ros/foxy/lib/liboctomap.so" />
+					<Add library="/opt/ros/foxy/lib/liboctomath.so" />
 				</Linker>
 			</Target>
 			<Target title="so">
@@ -37,6 +40,9 @@
 					<Add library="/opt/ros/foxy/lib/liborocos-kdl.so" />
 					<Add library="/opt/ros/foxy/lib/libkdl_parser.so" />
 					<Add library="/opt/ros/foxy/lib/liburdf.so" />
+					<Add library="/opt/ros/foxy/lib/x86_64-linux-gnu/libpinocchio.so" />
+					<Add library="/opt/ros/foxy/lib/liboctomap.so" />
+					<Add library="/opt/ros/foxy/lib/liboctomath.so" />
 				</Linker>
 			</Target>
 		</Build>
@@ -55,6 +61,9 @@
 			<Add directory="/usr/include" />
 			<Add directory="/usr/include/eigen3" />
 			<Add directory="/opt/ros/foxy/include" />
+			<Add directory="/opt/ros/foxy/include/pinocchio" />
+			<Add directory="/usr/include/" />
+			<Add directory="/opt/ros/foxy/include/octomap" />
 		</Compiler>
 		<Linker>
 			<Add option="-s" />
@@ -62,6 +71,9 @@
 			<Add library="/opt/ros/foxy/lib/liborocos-kdl.so" />
 			<Add library="/opt/ros/foxy/lib/libkdl_parser.so" />
 			<Add library="/opt/ros/foxy/lib/liburdf.so" />
+			<Add library="/opt/ros/foxy/lib/x86_64-linux-gnu/libpinocchio.so" />
+			<Add library="/opt/ros/foxy/lib/liboctomap.so" />
+			<Add library="/opt/ros/foxy/lib/liboctomath.so" />
 		</Linker>
 		<Unit filename="Inc/ti5rcl.hpp" />
 		<Unit filename="Middlewares/ti5mcl/Inc/ti5mcl.hpp" />

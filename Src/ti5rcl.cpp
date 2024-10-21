@@ -35,14 +35,15 @@
 #include <kdl/utilities/utility.h>
 #include <kdl/trajectory_composite.hpp>
 
-#include <pinocchio/parsers/urdf.hpp>
-
+#include "pinocchio/algorithm/joint-configuration.hpp"
+#include "pinocchio/algorithm/rnea.hpp"
+#include "pinocchio/parsers/urdf.hpp"
 using namespace pinocchio;
 using namespace KDL;
 using namespace ti5rcl;
 using namespace std;
 
-bool ti5Robot::linear_move(const Frame *end_pos)
+bool ti5Robot::linear_move(const KDL::Frame *end_pos)
 {
     // 获取所有关节角度
     JntArray qNow(_nrOfJoints);
@@ -58,7 +59,7 @@ bool ti5Robot::linear_move(const Frame *end_pos)
     // 求末端位姿
     try
     {
-        Frame frameNow;
+        KDL::Frame frameNow;
         ChainFkSolverPos_recursive fwdkin(_chain);
         fwdkin.JntToCart(qNow, frameNow);
         tlog_info << "frameNow: " << frameNow.p.x() << "," << frameNow.p.y() << "," << frameNow.p.z() << endl;
@@ -85,7 +86,7 @@ bool ti5Robot::linear_move(const Frame *end_pos)
         std::ofstream of("./trajectory.dat");
         for (double t = 0.0; t <= traject->Duration(); t += dt)
         {
-            Frame current_pose;
+            KDL::Frame current_pose;
             current_pose = traject->Pos(t);
             for (int i = 0; i < 4; ++i)
                 for (int j = 0; j < 4; ++j)
@@ -106,21 +107,24 @@ bool ti5Robot::linear_move(const Frame *end_pos)
     return true;
 }
 
-bool ti5Robot::drag_mode_enable(BOOL enable)
+bool ti5Robot::drag_mode_enable(bool enable)
 {
-    Model model;
-    urdf::buildModel(_urdfPath, model);
-    tlog_info << "urdf model loaded" << endl;
-    Data data(model);
-    Eigen::VectorXd q = pinocchio::neutral(model);
-    pinocchio::computeGeneralizedGravity(model, data, q);
-    for (int i = 0; i < model.nv; ++i)
-    {
-        // 假设 'joint_torques' 是一个存储每个关节扭矩的向量
-        joint_torques[i] = data.tau[i];
-    }
-    // pinocchio::forwardKinematics(model, data, q);
-    // pinocchio::computeGeneralizedGravity(model, data, q);
+  Model model;
+  pinocchio::urdf::buildModel(_urdfPath, model);
+
+  // Build a data frame associated with the model
+  Data data(model);
+
+  // Sample a random joint configuration, joint velocities and accelerations
+  Eigen::VectorXd q = Eigen::VectorXd::Zero(model.nv);     // in rad for the UR5
+  Eigen::VectorXd v = Eigen::VectorXd::Zero(model.nv); // in rad/s for the UR5
+  Eigen::VectorXd a = Eigen::VectorXd::Zero(model.nv); // in rad/s² for the UR5
+
+  // Computes the inverse dynamics (RNEA) for all the joints of the robot
+  Eigen::VectorXd tau = pinocchio::rnea(model, data, q, v, a);
+
+  // Print out to the vector of joint torques (in N.m)
+  std::cout << "Joint torques: " << data.tau.transpose() << std::endl;
 
     return true;
 }

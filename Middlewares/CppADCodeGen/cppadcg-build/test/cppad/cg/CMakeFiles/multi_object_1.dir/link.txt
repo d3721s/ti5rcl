@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -Wno-system-headers -g -O0 -g -ggdb   CMakeFiles/multi_object_1.dir/multi_object_1.cpp.o CMakeFiles/multi_object_1.dir/multi_object.cpp.o  -o multi_object_1  ../../../lib/libgtest.a ../../../lib/libgtest_main.a -lpthread /usr/lib/x86_64-linux-gnu/libdl.so -lcppad_lib ../../../lib/libgtest.a -lpthread 
