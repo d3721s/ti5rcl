@@ -25,7 +25,7 @@
 #warning "LOGLEVEL-debug"
 
 #ifndef CANINTERFACE
-#define CANINTERFACE "can0"
+#define CANINTERFACE "vcan0"
 #endif
 #ifndef LOGLEVEL
 #define LOGLEVEL TLOG_WARN
