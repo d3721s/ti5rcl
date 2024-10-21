@@ -125,7 +125,7 @@ bool ti5Robot::drag_mode_enable(bool enable)
     double nm_a[5]={0.096,0.096,0.089,0.089,0.05};
     for (auto x=0; x<model.nv; x++){
     tlog_info << "Joint positions: " << x << ": " << tau[x] << std::endl;
-    tlog_info << "Joint current: " << x << ": " << tau[x]*nm_a[x] << std::endl;
+    tlog_info << "Joint current: " << x << ": " << tau[x]/nm_a[x] << std::endl;
 
     }
 

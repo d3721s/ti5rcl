@@ -1247,3 +1247,202 @@
 [2024-10-21 00:43:02,754][ INFO] ti5Motor 2has been created!
 [2024-10-21 00:43:02,754][ INFO] ti5Motor 3has been created!
 [2024-10-21 00:43:02,754][ INFO] ti5Motor 4has been created!
+[2024-10-21 00:56:30,133][ INFO] ti5Motor 0has been created!
+[2024-10-21 00:56:30,133][ INFO] ti5Motor 1has been created!
+[2024-10-21 00:56:30,133][ INFO] ti5Motor 2has been created!
+[2024-10-21 00:56:30,134][ INFO] ti5Motor 3has been created!
+[2024-10-21 00:56:30,134][ INFO] ti5Motor 4has been created!
+[2024-10-21 00:56:30,134][ INFO] Joint positions: 0:0.0233849
+[2024-10-21 00:56:30,134][ INFO] Joint positions: 1:0.764125
+[2024-10-21 00:56:30,134][ INFO] Joint positions: 2:0.00922092
+[2024-10-21 00:56:30,134][ INFO] Joint positions: 3:-0.129475
+[2024-10-21 00:56:30,134][ INFO] Joint positions: 4:0.00153493
+[2024-10-21 00:56:30,134][ INFO] Joint torques:  0.0233849   0.764125 0.00922092  -0.129475 0.00153493
+[2024-10-21 00:56:46,773][ INFO] ti5Motor 0has been created!
+[2024-10-21 00:56:46,773][ INFO] ti5Motor 1has been created!
+[2024-10-21 00:56:46,773][ INFO] ti5Motor 2has been created!
+[2024-10-21 00:56:46,773][ INFO] ti5Motor 3has been created!
+[2024-10-21 00:56:46,773][ INFO] ti5Motor 4has been created!
+[2024-10-21 00:56:46,774][ INFO] Joint positions: 0:0.0233849
+[2024-10-21 00:56:46,774][ INFO] Joint positions: 1:0.764125
+[2024-10-21 00:56:46,774][ INFO] Joint positions: 2:0.00922092
+[2024-10-21 00:56:46,774][ INFO] Joint positions: 3:-0.129475
+[2024-10-21 00:56:46,774][ INFO] Joint positions: 4:0.00153493
+[2024-10-21 00:56:46,774][ INFO] Joint torques:  0.0233849   0.764125 0.00922092  -0.129475 0.00153493
+[2024-10-21 00:56:47,785][ INFO] ti5Motor 0has been created!
+[2024-10-21 00:56:47,785][ INFO] ti5Motor 1has been created!
+[2024-10-21 00:56:47,785][ INFO] ti5Motor 2has been created!
+[2024-10-21 00:56:47,785][ INFO] ti5Motor 3has been created!
+[2024-10-21 00:56:47,785][ INFO] ti5Motor 4has been created!
+[2024-10-21 00:56:47,785][ INFO] Joint positions: 0:0.0233849
+[2024-10-21 00:56:47,785][ INFO] Joint positions: 1:0.764125
+[2024-10-21 00:56:47,785][ INFO] Joint positions: 2:0.00922092
+[2024-10-21 00:56:47,785][ INFO] Joint positions: 3:-0.129475
+[2024-10-21 00:56:47,785][ INFO] Joint positions: 4:0.00153493
+[2024-10-21 00:56:47,785][ INFO] Joint torques:  0.0233849   0.764125 0.00922092  -0.129475 0.00153493
+[2024-10-21 00:56:48,795][ INFO] ti5Motor 0has been created!
+[2024-10-21 00:56:48,795][ INFO] ti5Motor 1has been created!
+[2024-10-21 00:56:48,795][ INFO] ti5Motor 2has been created!
+[2024-10-21 00:56:48,796][ INFO] ti5Motor 3has been created!
+[2024-10-21 00:56:48,796][ INFO] ti5Motor 4has been created!
+[2024-10-21 00:56:48,796][ INFO] Joint positions: 0:0.0233849
+[2024-10-21 00:56:48,796][ INFO] Joint positions: 1:0.764125
+[2024-10-21 00:56:48,796][ INFO] Joint positions: 2:0.00922092
+[2024-10-21 00:56:48,796][ INFO] Joint positions: 3:-0.129475
+[2024-10-21 00:56:48,796][ INFO] Joint positions: 4:0.00153493
+[2024-10-21 00:56:48,796][ INFO] Joint torques:  0.0233849   0.764125 0.00922092  -0.129475 0.00153493
+[2024-10-21 00:56:50,845][ INFO] ti5Motor 0has been created!
+[2024-10-21 00:56:50,845][ INFO] ti5Motor 1has been created!
+[2024-10-21 00:56:50,845][ INFO] ti5Motor 2has been created!
+[2024-10-21 00:56:50,845][ INFO] ti5Motor 3has been created!
+[2024-10-21 00:56:50,845][ INFO] ti5Motor 4has been created!
+[2024-10-21 00:56:50,846][ INFO] Joint positions: 0:0.0233849
+[2024-10-21 00:56:50,846][ INFO] Joint positions: 1:0.764125
+[2024-10-21 00:56:50,846][ INFO] Joint positions: 2:0.00922092
+[2024-10-21 00:56:50,846][ INFO] Joint positions: 3:-0.129475
+[2024-10-21 00:56:50,846][ INFO] Joint positions: 4:0.00153493
+[2024-10-21 00:56:50,846][ INFO] Joint torques:  0.0233849   0.764125 0.00922092  -0.129475 0.00153493
+[2024-10-21 01:00:46,234][ INFO] ti5Motor 0has been created!
+[2024-10-21 01:00:46,235][ INFO] ti5Motor 1has been created!
+[2024-10-21 01:00:46,235][ INFO] ti5Motor 2has been created!
+[2024-10-21 01:00:46,235][ INFO] ti5Motor 3has been created!
+[2024-10-21 01:00:46,235][ INFO] ti5Motor 4has been created!
+[2024-10-21 01:00:46,235][ INFO] Joint positions: 0: 0.0233849
+[2024-10-21 01:00:46,235][ INFO] Joint current: 0: 0.00224495
+[2024-10-21 01:00:46,235][ INFO] Joint positions: 1: 0.764125
+[2024-10-21 01:00:46,235][ INFO] Joint current: 1: 0.073356
+[2024-10-21 01:00:46,235][ INFO] Joint positions: 2: 0.00922092
+[2024-10-21 01:00:46,235][ INFO] Joint current: 2: 0.000820662
+[2024-10-21 01:00:46,235][ INFO] Joint positions: 3: -0.129475
+[2024-10-21 01:00:46,235][ INFO] Joint current: 3: -0.0115233
+[2024-10-21 01:00:46,235][ INFO] Joint positions: 4: 0.00153493
+[2024-10-21 01:00:46,235][ INFO] Joint current: 4: 7.67465e-05
+[2024-10-21 01:00:46,235][ INFO] Joint torques:  0.0233849   0.764125 0.00922092  -0.129475 0.00153493
+[2024-10-21 01:01:59,660][ INFO] ti5Motor 0has been created!
+[2024-10-21 01:01:59,660][ INFO] ti5Motor 1has been created!
+[2024-10-21 01:01:59,660][ INFO] ti5Motor 2has been created!
+[2024-10-21 01:01:59,660][ INFO] ti5Motor 3has been created!
+[2024-10-21 01:01:59,660][ INFO] ti5Motor 4has been created!
+[2024-10-21 01:01:59,661][ INFO] Joint positions: 0: 0.0233849
+[2024-10-21 01:01:59,661][ INFO] Joint current: 0: 0.243593
+[2024-10-21 01:01:59,661][ INFO] Joint positions: 1: 0.764125
+[2024-10-21 01:01:59,661][ INFO] Joint current: 1: 7.95964
+[2024-10-21 01:01:59,661][ INFO] Joint positions: 2: 0.00922092
+[2024-10-21 01:01:59,661][ INFO] Joint current: 2: 0.103606
+[2024-10-21 01:01:59,661][ INFO] Joint positions: 3: -0.129475
+[2024-10-21 01:01:59,661][ INFO] Joint current: 3: -1.45478
+[2024-10-21 01:01:59,661][ INFO] Joint positions: 4: 0.00153493
+[2024-10-21 01:01:59,661][ INFO] Joint current: 4: 0.0306986
+[2024-10-21 01:01:59,661][ INFO] Joint torques:  0.0233849   0.764125 0.00922092  -0.129475 0.00153493
+[2024-10-21 01:07:53,753][ INFO] ti5Motor 0has been created!
+[2024-10-21 01:07:53,753][ INFO] ti5Motor 1has been created!
+[2024-10-21 01:07:53,753][ INFO] ti5Motor 2has been created!
+[2024-10-21 01:07:53,753][ INFO] ti5Motor 3has been created!
+[2024-10-21 01:07:53,753][ INFO] ti5Motor 4has been created!
+[2024-10-21 01:07:53,754][ INFO] Joint positions: 0: 0.0233849
+[2024-10-21 01:07:53,754][ INFO] Joint current: 0: 0.243593
+[2024-10-21 01:07:53,754][ INFO] Joint positions: 1: 0.764125
+[2024-10-21 01:07:53,754][ INFO] Joint current: 1: 7.95964
+[2024-10-21 01:07:53,754][ INFO] Joint positions: 2: 0.00922092
+[2024-10-21 01:07:53,754][ INFO] Joint current: 2: 0.103606
+[2024-10-21 01:07:53,754][ INFO] Joint positions: 3: -0.129475
+[2024-10-21 01:07:53,754][ INFO] Joint current: 3: -1.45478
+[2024-10-21 01:07:53,754][ INFO] Joint positions: 4: 0.00153493
+[2024-10-21 01:07:53,754][ INFO] Joint current: 4: 0.0306986
+[2024-10-21 01:07:53,754][ INFO] Joint torques:  0.0233849   0.764125 0.00922092  -0.129475 0.00153493
+[2024-10-21 01:08:06,754][ INFO] ti5Motor 0has been created!
+[2024-10-21 01:08:06,754][ INFO] ti5Motor 1has been created!
+[2024-10-21 01:08:06,754][ INFO] ti5Motor 2has been created!
+[2024-10-21 01:08:06,754][ INFO] ti5Motor 3has been created!
+[2024-10-21 01:08:06,754][ INFO] ti5Motor 4has been created!
+[2024-10-21 01:08:06,754][ INFO] Joint positions: 0: 0.0233849
+[2024-10-21 01:08:06,754][ INFO] Joint current: 0: 0.243593
+[2024-10-21 01:08:06,754][ INFO] Joint positions: 1: 0.764125
+[2024-10-21 01:08:06,754][ INFO] Joint current: 1: 7.95964
+[2024-10-21 01:08:06,754][ INFO] Joint positions: 2: 0.00922092
+[2024-10-21 01:08:06,754][ INFO] Joint current: 2: 0.103606
+[2024-10-21 01:08:06,754][ INFO] Joint positions: 3: -0.129475
+[2024-10-21 01:08:06,754][ INFO] Joint current: 3: -1.45478
+[2024-10-21 01:08:06,754][ INFO] Joint positions: 4: 0.00153493
+[2024-10-21 01:08:06,754][ INFO] Joint current: 4: 0.0306986
+[2024-10-21 01:08:06,754][ INFO] Joint torques:  0.0233849   0.764125 0.00922092  -0.129475 0.00153493
+[2024-10-21 01:08:18,548][ INFO] ti5Motor 0has been created!
+[2024-10-21 01:08:18,548][ INFO] ti5Motor 1has been created!
+[2024-10-21 01:08:18,548][ INFO] ti5Motor 2has been created!
+[2024-10-21 01:08:18,548][ INFO] ti5Motor 3has been created!
+[2024-10-21 01:08:18,548][ INFO] ti5Motor 4has been created!
+[2024-10-21 01:08:18,548][ INFO] Joint positions: 0: 0.0233849
+[2024-10-21 01:08:18,548][ INFO] Joint current: 0: 0.243593
+[2024-10-21 01:08:18,548][ INFO] Joint positions: 1: 0.764125
+[2024-10-21 01:08:18,548][ INFO] Joint current: 1: 7.95964
+[2024-10-21 01:08:18,548][ INFO] Joint positions: 2: 0.00922092
+[2024-10-21 01:08:18,548][ INFO] Joint current: 2: 0.103606
+[2024-10-21 01:08:18,548][ INFO] Joint positions: 3: -0.129475
+[2024-10-21 01:08:18,548][ INFO] Joint current: 3: -1.45478
+[2024-10-21 01:08:18,548][ INFO] Joint positions: 4: 0.00153493
+[2024-10-21 01:08:18,548][ INFO] Joint current: 4: 0.0306986
+[2024-10-21 01:08:18,548][ INFO] Joint torques:  0.0233849   0.764125 0.00922092  -0.129475 0.00153493
+[2024-10-21 01:08:19,993][ INFO] ti5Motor 0has been created!
+[2024-10-21 01:08:19,993][ INFO] ti5Motor 1has been created!
+[2024-10-21 01:08:19,993][ INFO] ti5Motor 2has been created!
+[2024-10-21 01:08:19,993][ INFO] ti5Motor 3has been created!
+[2024-10-21 01:08:19,993][ INFO] ti5Motor 4has been created!
+[2024-10-21 01:08:19,993][ INFO] Joint positions: 0: 0.0233849
+[2024-10-21 01:08:19,993][ INFO] Joint current: 0: 0.243593
+[2024-10-21 01:08:19,993][ INFO] Joint positions: 1: 0.764125
+[2024-10-21 01:08:19,993][ INFO] Joint current: 1: 7.95964
+[2024-10-21 01:08:19,993][ INFO] Joint positions: 2: 0.00922092
+[2024-10-21 01:08:19,993][ INFO] Joint current: 2: 0.103606
+[2024-10-21 01:08:19,993][ INFO] Joint positions: 3: -0.129475
+[2024-10-21 01:08:19,993][ INFO] Joint current: 3: -1.45478
+[2024-10-21 01:08:19,993][ INFO] Joint positions: 4: 0.00153493
+[2024-10-21 01:08:19,993][ INFO] Joint current: 4: 0.0306986
+[2024-10-21 01:08:19,993][ INFO] Joint torques:  0.0233849   0.764125 0.00922092  -0.129475 0.00153493
+[2024-10-21 01:08:21,037][ INFO] ti5Motor 0has been created!
+[2024-10-21 01:08:21,037][ INFO] ti5Motor 1has been created!
+[2024-10-21 01:08:21,037][ INFO] ti5Motor 2has been created!
+[2024-10-21 01:08:21,037][ INFO] ti5Motor 3has been created!
+[2024-10-21 01:08:21,037][ INFO] ti5Motor 4has been created!
+[2024-10-21 01:08:21,037][ INFO] Joint positions: 0: 0.0233849
+[2024-10-21 01:08:21,037][ INFO] Joint current: 0: 0.243593
+[2024-10-21 01:08:21,037][ INFO] Joint positions: 1: 0.764125
+[2024-10-21 01:08:21,037][ INFO] Joint current: 1: 7.95964
+[2024-10-21 01:08:21,037][ INFO] Joint positions: 2: 0.00922092
+[2024-10-21 01:08:21,037][ INFO] Joint current: 2: 0.103606
+[2024-10-21 01:08:21,037][ INFO] Joint positions: 3: -0.129475
+[2024-10-21 01:08:21,037][ INFO] Joint current: 3: -1.45478
+[2024-10-21 01:08:21,037][ INFO] Joint positions: 4: 0.00153493
+[2024-10-21 01:08:21,037][ INFO] Joint current: 4: 0.0306986
+[2024-10-21 01:08:21,037][ INFO] Joint torques:  0.0233849   0.764125 0.00922092  -0.129475 0.00153493
+[2024-10-21 01:08:23,385][ INFO] ti5Motor 0has been created!
+[2024-10-21 01:08:23,385][ INFO] ti5Motor 1has been created!
+[2024-10-21 01:08:23,385][ INFO] ti5Motor 2has been created!
+[2024-10-21 01:08:23,385][ INFO] ti5Motor 3has been created!
+[2024-10-21 01:08:23,385][ INFO] ti5Motor 4has been created!
+[2024-10-21 01:08:23,386][ INFO] Joint positions: 0: 0.0233849
+[2024-10-21 01:08:23,386][ INFO] Joint current: 0: 0.243593
+[2024-10-21 01:08:23,386][ INFO] Joint positions: 1: 0.764125
+[2024-10-21 01:08:23,386][ INFO] Joint current: 1: 7.95964
+[2024-10-21 01:08:23,386][ INFO] Joint positions: 2: 0.00922092
+[2024-10-21 01:08:23,386][ INFO] Joint current: 2: 0.103606
+[2024-10-21 01:08:23,386][ INFO] Joint positions: 3: -0.129475
+[2024-10-21 01:08:23,386][ INFO] Joint current: 3: -1.45478
+[2024-10-21 01:08:23,386][ INFO] Joint positions: 4: 0.00153493
+[2024-10-21 01:08:23,386][ INFO] Joint current: 4: 0.0306986
+[2024-10-21 01:08:23,386][ INFO] Joint torques:  0.0233849   0.764125 0.00922092  -0.129475 0.00153493
+[2024-10-21 01:10:28,583][ INFO] ti5Motor 0has been created!
+[2024-10-21 01:10:28,583][ INFO] ti5Motor 1has been created!
+[2024-10-21 01:10:28,583][ INFO] ti5Motor 2has been created!
+[2024-10-21 01:10:28,583][ INFO] ti5Motor 3has been created!
+[2024-10-21 01:10:28,583][ INFO] ti5Motor 4has been created!
+[2024-10-21 01:10:28,583][ INFO] Joint positions: 0: -0.0233846
+[2024-10-21 01:10:28,583][ INFO] Joint current: 0: -0.243589
+[2024-10-21 01:10:28,583][ INFO] Joint positions: 1: -0.764117
+[2024-10-21 01:10:28,583][ INFO] Joint current: 1: -7.95956
+[2024-10-21 01:10:28,583][ INFO] Joint positions: 2: -0.00922064
+[2024-10-21 01:10:28,583][ INFO] Joint current: 2: -0.103603
+[2024-10-21 01:10:28,583][ INFO] Joint positions: 3: -0.129474
+[2024-10-21 01:10:28,583][ INFO] Joint current: 3: -1.45476
+[2024-10-21 01:10:28,583][ INFO] Joint positions: 4: -0.00153495
+[2024-10-21 01:10:28,583][ INFO] Joint current: 4: -0.030699
+[2024-10-21 01:10:28,583][ INFO] Joint torques:  -0.0233846   -0.764117 -0.00922064   -0.129474 -0.00153495

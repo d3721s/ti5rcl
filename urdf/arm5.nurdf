@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="arm5dof">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0628984200240151 0.000433922382560015 -0.4744797838119"
+        rpy="0 0 0" />
+      <mass
+        value="6.53725957238719" />
+      <inertia
+        ixx="0.397482146902127"
+        ixy="-7.22053065041858E-05"
+        ixz="-6.89026689847105E-07"
+        iyy="0.397433062665108"
+        iyz="5.65221145219872E-08"
+        izz="0.0121432661099057" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arm5dof/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arm5dof/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Empty_Link1">
+    <inertial>
+      <origin
+        xyz="-0.00121224810835571 0.0308537746693671 0.0190492108255217"
+        rpy="0 0 0" />
+      <mass
+        value="0.0603720269298029" />
+      <inertia
+        ixx="8.58177706201583E-05"
+        ixy="7.87245829699288E-07"
+        ixz="1.00401800269145E-06"
+        iyy="6.58119572405203E-05"
+        iyz="-2.55539645767075E-05"
+        izz="5.34161143060147E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arm5dof/meshes/Empty_Link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arm5dof/meshes/Empty_Link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j1"
+    type="revolute">
+    <origin
+      xyz="0.1255 0 0"
+      rpy="-1.5708 1.5315 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="Empty_Link1" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-2.618"
+      upper="2.618"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Empty_Link2">
+    <inertial>
+      <origin
+        xyz="-0.00292934511193255 -3.02278942157785E-05 0.00114317883643383"
+        rpy="0 0 0" />
+      <mass
+        value="0.369779302354558" />
+      <inertia
+        ixx="0.000354582118477076"
+        ixy="7.15257579040223E-08"
+        ixz="-1.55667774778337E-05"
+        iyy="0.000347408030887835"
+        iyz="-2.70447542256389E-07"
+        izz="0.00026497650718813" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arm5dof/meshes/Empty_Link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arm5dof/meshes/Empty_Link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j2"
+    type="revolute">
+    <origin
+      xyz="0 0 0.055"
+      rpy="1.6101 1.5708 0" />
+    <parent
+      link="Empty_Link1" />
+    <child
+      link="Empty_Link2" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Empty_Link3">
+    <inertial>
+      <origin
+        xyz="-0.000439659945799642 -0.000955255784029496 0.106582910684079"
+        rpy="0 0 0" />
+      <mass
+        value="0.162548001883722" />
+      <inertia
+        ixx="0.000167034544430771"
+        ixy="5.35442372757676E-07"
+        ixz="1.97554386905923E-06"
+        iyy="0.000173568168357775"
+        iyz="3.51353814013717E-06"
+        izz="0.000117353714826033" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arm5dof/meshes/Empty_Link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arm5dof/meshes/Empty_Link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j3"
+    type="revolute">
+    <origin
+      xyz="-0.0551 0 0"
+      rpy="-1.5708 -0.03927 1.5708" />
+    <parent
+      link="Empty_Link2" />
+    <child
+      link="Empty_Link3" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-2.618"
+      upper="2.618"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Empty_Link4">
+    <inertial>
+      <origin
+        xyz="-0.0676517520446449 -1.08370555029769E-08 -0.00936478334037799"
+        rpy="0 0 0" />
+      <mass
+        value="0.100466627587425" />
+      <inertia
+        ixx="6.2345283798227E-05"
+        ixy="-9.05695527687726E-12"
+        ixz="1.02842250474304E-05"
+        iyy="7.16884458915368E-05"
+        iyz="-6.74614247190128E-10"
+        izz="6.77978559016323E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arm5dof/meshes/Empty_Link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arm5dof/meshes/Empty_Link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j4"
+    type="revolute">
+    <origin
+      xyz="0 0 0.215"
+      rpy="1.6101 1.5708 0" />
+    <parent
+      link="Empty_Link3" />
+    <child
+      link="Empty_Link4" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-2.2689"
+      upper="2.2689"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Empty_Link5">
+    <inertial>
+      <origin
+        xyz="0.0247439689563087 -0.000245163490001032 0.0206941564877786"
+        rpy="0 0 0" />
+      <mass
+        value="0.0380214590684831" />
+      <inertia
+        ixx="3.27353535036131E-05"
+        ixy="3.85352547706558E-08"
+        ixz="-1.02837229319022E-05"
+        iyy="3.66242749023693E-05"
+        iyz="1.01891228872329E-07"
+        izz="1.67832222590929E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arm5dof/meshes/Empty_Link5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arm5dof/meshes/Empty_Link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j5"
+    type="revolute">
+    <origin
+      xyz="-0.152 0 0"
+      rpy="1.5708 0 -1.5708" />
+    <parent
+      link="Empty_Link4" />
+    <child
+      link="Empty_Link5" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
