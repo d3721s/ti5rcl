@@ -111,6 +111,7 @@ public: //机械臂操作信息设置与获取
 public: //机械臂安全状态设置与查询
 public: //使用脚本
 public: //机械臂轨迹复现
+bool drag_mode_enable(BOOL enable);
 public: //机械臂伺服运动模式
 public: //机械臂运动学
 public: //扩展1

@@ -110,3 +110,8 @@ bool ti5Robot::linear_move(const Frame *end_pos)
 }
 
 
+bool ti5Robot::drag_mode_enable(BOOL enable)
+{
+    
+
+}
