@@ -109,22 +109,23 @@ bool ti5Robot::linear_move(const KDL::Frame *end_pos)
 
 bool ti5Robot::drag_mode_enable(bool enable)
 {
-  Model model;
-  pinocchio::urdf::buildModel(_urdfPath, model);
+    Model model;
+    pinocchio::urdf::buildModel(_urdfPath, model);
 
-  // Build a data frame associated with the model
-  Data data(model);
+    // Build a data frame associated with the model
+    Data data(model);
 
-  // Sample a random joint configuration, joint velocities and accelerations
-  Eigen::VectorXd q = Eigen::VectorXd::Zero(model.nv);     // in rad for the UR5
-  Eigen::VectorXd v = Eigen::VectorXd::Zero(model.nv); // in rad/s for the UR5
-  Eigen::VectorXd a = Eigen::VectorXd::Zero(model.nv); // in rad/s² for the UR5
+    // Sample a random joint configuration, joint velocities and accelerations
+    Eigen::VectorXd q = Eigen::VectorXd::Zero(model.nv); // in rad for the UR5
+    Eigen::VectorXd v = Eigen::VectorXd::Zero(model.nv); // in rad/s for the UR5
+    Eigen::VectorXd a = Eigen::VectorXd::Zero(model.nv); // in rad/s² for the UR5
 
-  // Computes the inverse dynamics (RNEA) for all the joints of the robot
-  Eigen::VectorXd tau = pinocchio::rnea(model, data, q, v, a);
-
-  // Print out to the vector of joint torques (in N.m)
-  std::cout << "Joint torques: " << data.tau.transpose() << std::endl;
+    // Computes the inverse dynamics (RNEA) for all the joints of the robot
+    Eigen::VectorXd tau = pinocchio::rnea(model, data, q, v, a);
+    for (auto x=0; x<model.nv; x++)
+    tlog_info << "Joint positions: " << x << ":" << tau[x] << std::endl;
+    // Print out to the vector of joint torques (in N.m)
+    tlog_info << "Joint torques: " << data.tau.transpose() << std::endl;
 
     return true;
 }
