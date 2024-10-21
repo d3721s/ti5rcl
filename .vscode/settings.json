@@ -59,6 +59,7 @@
   "files.associations": {
     "iterator": "cpp",
     "random": "cpp",
-    "ostream": "cpp"
+    "ostream": "cpp",
+    "*.txx": "cpp"
   }
 }

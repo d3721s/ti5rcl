@@ -35,83 +35,92 @@
 #include <kdl/utilities/utility.h>
 #include <kdl/trajectory_composite.hpp>
 
+#include <pinocchio/parsers/urdf.hpp>
+
+using namespace pinocchio;
 using namespace KDL;
 using namespace ti5rcl;
 using namespace std;
 
-
 bool ti5Robot::linear_move(const Frame *end_pos)
 {
-    //获取所有关节角度
+    // 获取所有关节角度
     JntArray qNow(_nrOfJoints);
     int32_t c;
     double v;
     for (int i = 0; i < _nrOfJoints; i++)
     {
 
-        _joint[i]->quickGetCSP(&c,&v,&qNow(i));
-        qNow(i)=0;
+        _joint[i]->quickGetCSP(&c, &v, &qNow(i));
+        qNow(i) = 0;
 #warning
     }
-    //求末端位姿
+    // 求末端位姿
     try
     {
         Frame frameNow;
         ChainFkSolverPos_recursive fwdkin(_chain);
-        fwdkin.JntToCart(qNow,frameNow);
+        fwdkin.JntToCart(qNow, frameNow);
         tlog_info << "frameNow: " << frameNow.p.x() << "," << frameNow.p.y() << "," << frameNow.p.z() << endl;
 
+        // Path
+        // Path_Circle
+        // Path_Composite
+        // Path_Cyclic_Closed
+        // Path_Line
+        // Path_Point
+        // Path_RoundedComposite
 
-
-//Path
-//Path_Circle
-//Path_Composite
-//Path_Cyclic_Closed
-//Path_Line
-//Path_Point
-//Path_RoundedComposite
-
-
-        Path_Line* path = new Path_Line(frameNow,*end_pos,new RotationalInterpolation_SingleAxis(),0.2);
+        Path_Line *path = new Path_Line(frameNow, *end_pos, new RotationalInterpolation_SingleAxis(), 0.2);
 
         // Trajectory defines a motion of the robot along a path.
         // This defines a trapezoidal velocity profile.
-        VelocityProfile* velpref = new VelocityProfile_Trap(0.5,0.1);
-        velpref->SetProfile(0,path->PathLength());
-        Trajectory* traject = new Trajectory_Segment(path, velpref);
-        Trajectory_Composite* ctraject = new Trajectory_Composite();
+        VelocityProfile *velpref = new VelocityProfile_Trap(0.5, 0.1);
+        velpref->SetProfile(0, path->PathLength());
+        Trajectory *traject = new Trajectory_Segment(path, velpref);
+        Trajectory_Composite *ctraject = new Trajectory_Composite();
 
         // use the trajectory
-        double dt=0.1;
+        double dt = 0.1;
         std::ofstream of("./trajectory.dat");
-        for (double t=0.0; t <= traject->Duration(); t+= dt)
+        for (double t = 0.0; t <= traject->Duration(); t += dt)
         {
             Frame current_pose;
             current_pose = traject->Pos(t);
-            for (int i=0; i<4; ++i)
-                for (int j=0; j<4; ++j)
-                    of << current_pose(i,j) << "\t";
+            for (int i = 0; i < 4; ++i)
+                for (int j = 0; j < 4; ++j)
+                    of << current_pose(i, j) << "\t";
             of << "\n";
             // also velocities and accelerations are available !
-            //traject->Vel(t);
-            //traject->Acc(t);
+            // traject->Vel(t);
+            // traject->Acc(t);
         }
         of.close();
-
-
     }
-    catch(Error& error)
+    catch (Error &error)
     {
-        std::cout <<"I encountered this error : " << error.Description() << std::endl;
+        std::cout << "I encountered this error : " << error.Description() << std::endl;
         std::cout << "with the following type " << error.GetType() << std::endl;
     }
 
     return true;
 }
 
-
 bool ti5Robot::drag_mode_enable(BOOL enable)
 {
-    
+    Model model;
+    urdf::buildModel(_urdfPath, model);
+    tlog_info << "urdf model loaded" << endl;
+    Data data(model);
+    Eigen::VectorXd q = pinocchio::neutral(model);
+    pinocchio::computeGeneralizedGravity(model, data, q);
+    for (int i = 0; i < model.nv; ++i)
+    {
+        // 假设 'joint_torques' 是一个存储每个关节扭矩的向量
+        joint_torques[i] = data.tau[i];
+    }
+    // pinocchio::forwardKinematics(model, data, q);
+    // pinocchio::computeGeneralizedGravity(model, data, q);
 
+    return true;
 }
