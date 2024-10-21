@@ -62,15 +62,7 @@ bool ti5Robot::linear_move(const Frame *end_pos)
         tlog_info << "frameNow: " << frameNow.p.x() << "," << frameNow.p.y() << "," << frameNow.p.z() << endl;
 
 
-<<<<<<< Updated upstream
-    //验证插补
-        for (double t = 0.0; t <= 1.0; t += 0.01) {
-        Frame pos = path->Pos(t);
-        tlog_info << "At time " << t << ", position is (" << pos.p.x() << ", "
-                  << pos.p.y() << ", " << pos.p.z() << ") and rotation is ("
-                  << pos.M.data[0] << ", " << pos.M.data[1] << ", " << pos.M.data[2]
-                  << ", " << pos.M.data[3] << ")" << endl;
-    }
+
 //Path
 //Path_Circle
 //Path_Composite
@@ -78,11 +70,7 @@ bool ti5Robot::linear_move(const Frame *end_pos)
 //Path_Line
 //Path_Point
 //Path_RoundedComposite
-    //依次解算
-=======
-        // Path_RoundedComposite defines the geometric path along
-        // which the robot will move.
-        //
+
 
         Path_Line* path = new Path_Line(frameNow,*end_pos,new RotationalInterpolation_SingleAxis(),0.2);
 
@@ -109,41 +97,8 @@ bool ti5Robot::linear_move(const Frame *end_pos)
             //traject->Acc(t);
         }
         of.close();
->>>>>>> Stashed changes
 
-        // you can get some meta-info on the path:
-        for (int segmentnr=0;  segmentnr < 2; segmentnr++)
-        {
-            double starts,ends;
-            Path::IdentifierType pathtype;
-            if (segmentnr==0)
-            {
-                starts = 0.0;
-            }
-            else
-            {
-                starts = path->GetLengthToEndOfSegment(segmentnr-1);
-            }
-            ends = path->GetLengthToEndOfSegment(segmentnr);
-            pathtype = path->GetSegment(segmentnr)->getIdentifier();
-            std::cout << "segment " << segmentnr << " runs from s="<<starts << " to s=" <<ends;
-            switch(pathtype)
-            {
-            case Path::ID_CIRCLE:
-                std::cout << " circle";
-                break;
-            case Path::ID_LINE:
-                std::cout << " line ";
-                break;
-            default:
-                std::cout << " unknown ";
-                break;
-            }
-            std::cout << std::endl;
-        }
-        std::cout << " trajectory written to the ./trajectory.dat file " << std::endl;
 
-        delete ctraject;
     }
     catch(Error& error)
     {
