@@ -1446,3 +1446,52 @@
 [2024-10-21 01:10:28,583][ INFO] Joint positions: 4: -0.00153495
 [2024-10-21 01:10:28,583][ INFO] Joint current: 4: -0.030699
 [2024-10-21 01:10:28,583][ INFO] Joint torques:  -0.0233846   -0.764117 -0.00922064   -0.129474 -0.00153495
+[2024-10-21 18:00:09,514][ INFO] ti5Motor 0has been created!
+[2024-10-21 18:00:09,514][ INFO] ti5Motor 1has been created!
+[2024-10-21 18:00:09,514][ INFO] ti5Motor 2has been created!
+[2024-10-21 18:00:09,514][ INFO] ti5Motor 3has been created!
+[2024-10-21 18:00:09,514][ INFO] ti5Motor 4has been created!
+[2024-10-21 18:00:09,514][ INFO] Getting CSP!
+[2024-10-21 18:00:09,514][DEBUG] Sent 1bytes message!41 00 00 00 00 00 00 00 
+[2024-10-21 18:00:12,518][ERROR] Receive Timeout! 
+[2024-10-21 18:00:12,518][ INFO] Getting CSP!
+[2024-10-21 18:00:12,518][DEBUG] Sent 1bytes message!41 00 00 00 00 00 00 00 
+[2024-10-21 18:00:15,522][ERROR] Receive Timeout! 
+[2024-10-21 18:00:15,522][ INFO] Getting CSP!
+[2024-10-21 18:00:15,522][DEBUG] Sent 1bytes message!41 00 00 00 00 00 00 00 
+[2024-10-21 18:00:18,525][ERROR] Receive Timeout! 
+[2024-10-21 18:00:18,525][ INFO] Getting CSP!
+[2024-10-21 18:00:18,525][DEBUG] Sent 1bytes message!41 00 00 00 00 00 00 00 
+[2024-10-21 18:00:21,529][ERROR] Receive Timeout! 
+[2024-10-21 18:00:21,530][ INFO] Getting CSP!
+[2024-10-21 18:00:21,530][DEBUG] Sent 1bytes message!41 00 00 00 00 00 00 00 
+[2024-10-21 18:00:24,533][ERROR] Receive Timeout! 
+[2024-10-21 18:00:24,533][ INFO] frameNow: 0.6026,1.31664e-06,-9.87189e-07
+[2024-10-21 18:00:24,535][ INFO] Joint positions: 0: -0.0233846
+[2024-10-21 18:00:24,535][ INFO] Joint current: 0: -0.243589
+[2024-10-21 18:00:24,535][ INFO] Joint positions: 1: -0.764117
+[2024-10-21 18:00:24,535][ INFO] Joint current: 1: -7.95956
+[2024-10-21 18:00:24,535][ INFO] Joint positions: 2: -0.00922064
+[2024-10-21 18:00:24,535][ INFO] Joint current: 2: -0.103603
+[2024-10-21 18:00:24,535][ INFO] Joint positions: 3: -0.129474
+[2024-10-21 18:00:24,535][ INFO] Joint current: 3: -1.45476
+[2024-10-21 18:00:24,535][ INFO] Joint positions: 4: -0.00153495
+[2024-10-21 18:00:24,535][ INFO] Joint current: 4: -0.030699
+[2024-10-21 18:00:24,535][ INFO] Joint torques:  -0.0233846   -0.764117 -0.00922064   -0.129474 -0.00153495
+[2024-10-21 18:00:38,503][ INFO] ti5Motor 0has been created!
+[2024-10-21 18:00:38,503][ INFO] ti5Motor 1has been created!
+[2024-10-21 18:00:38,504][ INFO] ti5Motor 2has been created!
+[2024-10-21 18:00:38,504][ INFO] ti5Motor 3has been created!
+[2024-10-21 18:00:38,504][ INFO] ti5Motor 4has been created!
+[2024-10-21 18:00:38,504][ INFO] Getting CSP!
+[2024-10-21 18:00:38,504][DEBUG] Sent 1bytes message!41 00 00 00 00 00 00 00 
+[2024-10-21 18:00:47,723][ INFO] ti5Motor 0has been created!
+[2024-10-21 18:00:47,723][ INFO] ti5Motor 1has been created!
+[2024-10-21 18:00:47,723][ INFO] ti5Motor 2has been created!
+[2024-10-21 18:00:47,723][ INFO] ti5Motor 3has been created!
+[2024-10-21 18:00:47,723][ INFO] ti5Motor 4has been created!
+[2024-10-21 18:00:47,723][ INFO] Getting CSP!
+[2024-10-21 18:00:47,723][DEBUG] Sent 1bytes message!41 00 00 00 00 00 00 00 
+[2024-10-21 18:00:50,726][ERROR] Receive Timeout! 
+[2024-10-21 18:00:50,727][ INFO] Getting CSP!
+[2024-10-21 18:00:50,727][DEBUG] Sent 1bytes message!41 00 00 00 00 00 00 00 
