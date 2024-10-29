@@ -34,7 +34,7 @@
 #define LOGLEVEL TLOG_WARN
 #endif
 
-#define _urdfPath "/home/runyu/urdf/arm5.urdf"
+#define _urdfPath "/home/runyu/urdf/7dof_sw.urdf"
 #define chainRoot "base_link"
 #define chainTip "Empty_Link5"
 
