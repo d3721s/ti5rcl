@@ -45,6 +45,7 @@ using namespace std;
 
 bool ti5Robot::linear_move(const KDL::Frame *end_pos)
 {
+    tlog_info << "endpos: "<< end_pos->p.x() << "," << end_pos->p.y() << "," << end_pos->p.z() << endl;
     // 获取所有关节角度
     JntArray qNow(_nrOfJoints);
     int32_t c;
@@ -52,7 +53,6 @@ bool ti5Robot::linear_move(const KDL::Frame *end_pos)
     for (int i = 0; i < _nrOfJoints; i++)
     {
         _joint[i]->quickGetCSP(&c, &v, &qNow(i));
-        qNow(i) = 0;
     }
     // 求末端位姿
     try
@@ -74,8 +74,13 @@ bool ti5Robot::linear_move(const KDL::Frame *end_pos)
             current_pose = traject->Pos(t);
             for (int i = 0; i < 4; ++i)
                 for (int j = 0; j < 4; ++j)
+                {
                     of << current_pose(i, j) << "\t";
+                    cout <<current_pose(i, j) << "\t";
+                }
             of << "\n";
+            cout << "\n";
+
         }
         of.close();
     }
@@ -104,10 +109,11 @@ bool ti5Robot::drag_mode_enable(bool enable)
 
     // Computes the inverse dynamics (RNEA) for all the joints of the robot
     Eigen::VectorXd tau = pinocchio::rnea(model, data, q, v, a);
-    double nm_a[5]={0.096,0.096,0.089,0.089,0.05};
-    for (auto x=0; x<model.nv; x++){
-    tlog_info << "Joint positions: " << x << ": " << tau[x] << std::endl;
-    tlog_info << "Joint current: " << x << ": " << tau[x]/nm_a[x] << std::endl;
+    double nm_a[5]= {0.096,0.096,0.089,0.089,0.05};
+    for (auto x=0; x<model.nv; x++)
+    {
+        tlog_info << "Joint positions: " << x << ": " << tau[x] << std::endl;
+        tlog_info << "Joint current: " << x << ": " << tau[x]/nm_a[x] << std::endl;
 
     }
 

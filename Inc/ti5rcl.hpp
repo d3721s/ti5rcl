@@ -36,7 +36,7 @@
 
 #define _urdfPath "/home/runyu/urdf/7dof_sw.urdf"
 #define chainRoot "base_link"
-#define chainTip "Empty_Link5"
+#define chainTip "Link5"
 
 namespace ti5rcl
 {
@@ -71,14 +71,15 @@ public: //机械臂基础
         _joint.resize(7);
         for(uint8_t i=0;i<_nrOfJoints;i++)
         {
-            _joint[i]=new ti5Motor(i,reductionRatioTab[i]);
+            _joint[i]=new ti5Motor(i+1,reductionRatioTab[i]);
             if (_joint[i] == nullptr)
             {
                 std::cerr << "Error: _joint[" << i << "] is null." << std::endl;
                 continue;
             }
-
         }
+        _joint[5]=new ti5Motor(5,reductionRatioTab[5]);
+        _joint[6]=new ti5Motor(6,reductionRatioTab[6]);
 
     }
     ~ti5Robot() = default;
