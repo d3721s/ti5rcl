@@ -78,8 +78,8 @@ public: //机械臂基础
                 continue;
             }
         }
-        _joint[5]=new ti5Motor(5,reductionRatioTab[5]);
-        _joint[6]=new ti5Motor(6,reductionRatioTab[6]);
+        _joint[5]=new ti5Motor(6,reductionRatioTab[5]);
+        _joint[6]=new ti5Motor(7,reductionRatioTab[6]);
 
     }
     ~ti5Robot() = default;

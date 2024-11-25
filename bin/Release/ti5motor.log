@@ -2571,3 +2571,262 @@
 [2024-10-29 18:39:18,644][DEBUG] Received 8bytes message!00 00 00 00 36 9e 07 00 
 [2024-10-29 18:39:18,644][ INFO] Current: 0 Speed: 0.000000 Position: 0.938537
 [2024-10-29 18:39:18,644][ INFO] frameNow: 0.348498,0.109444,-0.332323
+[2024-10-29 18:55:28,582][ INFO] ti5Motor 1has been created!
+[2024-10-29 18:55:28,582][ INFO] ti5Motor 2has been created!
+[2024-10-29 18:55:28,582][ INFO] ti5Motor 3has been created!
+[2024-10-29 18:55:28,582][ INFO] ti5Motor 4has been created!
+[2024-10-29 18:55:28,582][ INFO] ti5Motor 5has been created!
+[2024-10-29 18:55:28,582][ INFO] ti5Motor 5has been created!
+[2024-10-29 18:55:28,582][ INFO] ti5Motor 6has been created!
+[2024-10-29 18:55:28,582][ INFO] endpos: 0,0,0
+[2024-10-29 18:55:28,582][ INFO] Getting CSP!
+[2024-10-29 18:55:28,582][DEBUG] Sent 1bytes message!41 00 00 00 00 00 00 00 
+[2024-10-29 18:55:28,584][DEBUG] Received 8bytes message!00 00 00 00 f3 bf e6 ff 
+[2024-10-29 18:55:28,584][ INFO] Current: 0 Speed: 0.000000 Position: -1.570809
+[2024-10-29 18:55:28,584][ INFO] Homing!
+[2024-10-29 18:55:28,584][ INFO] Moving to 0.000000 with velocity 0.523599
+[2024-10-29 18:55:28,584][DEBUG] Sent 7bytes message!58 00 00 00 00 49 03 00 
+[2024-10-29 18:55:28,584][ INFO] Getting CSP!
+[2024-10-29 18:55:28,584][DEBUG] Sent 1bytes message!41 00 00 00 00 00 00 00 
+[2024-10-29 18:55:28,585][DEBUG] Received 8bytes message!00 00 00 00 34 00 00 00 
+[2024-10-29 18:55:28,585][ INFO] Current: 0 Speed: 0.000000 Position: 0.000049
+[2024-10-29 18:55:28,585][ INFO] Homing!
+[2024-10-29 18:55:28,585][ INFO] Moving to 0.000000 with velocity 0.523599
+[2024-10-29 18:55:28,585][DEBUG] Sent 7bytes message!58 00 00 00 00 49 03 00 
+[2024-10-29 18:55:28,586][ INFO] Getting CSP!
+[2024-10-29 18:55:28,586][DEBUG] Sent 1bytes message!41 00 00 00 00 00 00 00 
+[2024-10-29 18:55:28,587][DEBUG] Received 8bytes message!00 00 00 00 4c dd 40 00 
+[2024-10-29 18:55:28,587][ INFO] Current: 0 Speed: 0.000000 Position: 5.031547
+[2024-10-29 18:55:28,587][ INFO] Homing!
+[2024-10-29 18:55:28,587][ INFO] Moving to 0.000000 with velocity 0.523599
+[2024-10-29 18:55:28,587][DEBUG] Sent 7bytes message!58 00 00 00 00 a2 02 00 
+[2024-10-29 18:55:28,587][ INFO] Getting CSP!
+[2024-10-29 18:55:28,587][DEBUG] Sent 1bytes message!41 00 00 00 00 00 00 00 
+[2024-10-29 18:55:28,589][DEBUG] Received 8bytes message!00 00 00 00 16 0f e8 ff 
+[2024-10-29 18:55:28,589][ INFO] Current: 0 Speed: 0.000000 Position: -1.857113
+[2024-10-29 18:55:28,589][ INFO] Homing!
+[2024-10-29 18:55:28,589][ INFO] Moving to 0.000000 with velocity 0.523599
+[2024-10-29 18:55:28,589][DEBUG] Sent 7bytes message!58 00 00 00 00 a2 02 00 
+[2024-10-29 18:55:28,589][ INFO] Getting CSP!
+[2024-10-29 18:55:28,589][DEBUG] Sent 1bytes message!41 00 00 00 00 00 00 00 
+[2024-10-29 18:55:28,591][DEBUG] Received 8bytes message!00 00 00 00 34 9e 07 00 
+[2024-10-29 18:55:28,591][ INFO] Current: 0 Speed: 0.000000 Position: 0.938533
+[2024-10-29 18:55:28,591][ INFO] Homing!
+[2024-10-29 18:55:28,591][ INFO] Moving to 0.000000 with velocity 0.523599
+[2024-10-29 18:55:28,591][DEBUG] Sent 7bytes message!58 00 00 00 00 a8 01 00 
+[2024-10-29 18:55:28,591][ INFO] frameNow: 0.348496,0.109445,-0.332323
+[2024-10-29 18:55:41,617][ INFO] ti5Motor 1has been created!
+[2024-10-29 18:55:41,617][ INFO] ti5Motor 2has been created!
+[2024-10-29 18:55:41,617][ INFO] ti5Motor 3has been created!
+[2024-10-29 18:55:41,617][ INFO] ti5Motor 4has been created!
+[2024-10-29 18:55:41,617][ INFO] ti5Motor 5has been created!
+[2024-10-29 18:55:41,617][ INFO] ti5Motor 5has been created!
+[2024-10-29 18:55:41,617][ INFO] ti5Motor 6has been created!
+[2024-10-29 18:55:41,617][ INFO] endpos: 0,0,0
+[2024-10-29 18:55:41,617][ INFO] Getting CSP!
+[2024-10-29 18:55:41,617][DEBUG] Sent 1bytes message!41 00 00 00 00 00 00 00 
+[2024-10-29 18:55:41,618][DEBUG] Received 8bytes message!4f ff 00 00 ec ff ff ff 
+[2024-10-29 18:55:41,618][ INFO] Current: 177 Speed: 0.000000 Position: -0.000019
+[2024-10-29 18:55:41,618][ INFO] Homing!
+[2024-10-29 18:55:41,618][ INFO] Moving to 0.000000 with velocity 0.523599
+[2024-10-29 18:55:41,618][DEBUG] Sent 7bytes message!58 00 00 00 00 49 03 00 
+[2024-10-29 18:55:41,618][ INFO] Getting CSP!
+[2024-10-29 18:55:41,618][DEBUG] Sent 1bytes message!41 00 00 00 00 00 00 00 
+[2024-10-29 18:55:41,620][DEBUG] Received 8bytes message!33 04 00 00 ff ff ff ff 
+[2024-10-29 18:55:41,620][ INFO] Current: 1075 Speed: 0.000000 Position: -0.000001
+[2024-10-29 18:55:41,620][ INFO] Homing!
+[2024-10-29 18:55:41,620][ INFO] Moving to 0.000000 with velocity 0.523599
+[2024-10-29 18:55:41,620][DEBUG] Sent 7bytes message!58 00 00 00 00 49 03 00 
+[2024-10-29 18:55:41,620][ INFO] Getting CSP!
+[2024-10-29 18:55:41,620][DEBUG] Sent 1bytes message!41 00 00 00 00 00 00 00 
+[2024-10-29 18:55:41,622][DEBUG] Received 8bytes message!63 00 00 00 f7 ff ff ff 
+[2024-10-29 18:55:41,622][ INFO] Current: 99 Speed: 0.000000 Position: -0.000011
+[2024-10-29 18:55:41,622][ INFO] Homing!
+[2024-10-29 18:55:41,622][ INFO] Moving to 0.000000 with velocity 0.523599
+[2024-10-29 18:55:41,622][DEBUG] Sent 7bytes message!58 00 00 00 00 a2 02 00 
+[2024-10-29 18:55:41,622][ INFO] Getting CSP!
+[2024-10-29 18:55:41,622][DEBUG] Sent 1bytes message!41 00 00 00 00 00 00 00 
+[2024-10-29 18:55:41,623][DEBUG] Received 8bytes message!74 fe 00 00 11 00 00 00 
+[2024-10-29 18:55:41,624][ INFO] Current: 396 Speed: 0.000000 Position: 0.000020
+[2024-10-29 18:55:41,624][ INFO] Homing!
+[2024-10-29 18:55:41,624][ INFO] Moving to 0.000000 with velocity 0.523599
+[2024-10-29 18:55:41,624][DEBUG] Sent 7bytes message!58 00 00 00 00 a2 02 00 
+[2024-10-29 18:55:41,624][ INFO] Getting CSP!
+[2024-10-29 18:55:41,624][DEBUG] Sent 1bytes message!41 00 00 00 00 00 00 00 
+[2024-10-29 18:55:41,625][DEBUG] Received 8bytes message!00 00 00 00 34 9e 07 00 
+[2024-10-29 18:55:41,625][ INFO] Current: 0 Speed: 0.000000 Position: 0.938533
+[2024-10-29 18:55:41,625][ INFO] Homing!
+[2024-10-29 18:55:41,625][ INFO] Moving to 0.000000 with velocity 0.523599
+[2024-10-29 18:55:41,625][DEBUG] Sent 7bytes message!58 00 00 00 00 a8 01 00 
+[2024-10-29 18:55:41,625][ INFO] frameNow: 0.81215,-3.98984e-08,6.66414e-06
+[2024-10-29 18:55:50,200][ INFO] ti5Motor 1has been created!
+[2024-10-29 18:55:50,200][ INFO] ti5Motor 2has been created!
+[2024-10-29 18:55:50,200][ INFO] ti5Motor 3has been created!
+[2024-10-29 18:55:50,200][ INFO] ti5Motor 4has been created!
+[2024-10-29 18:55:50,200][ INFO] ti5Motor 5has been created!
+[2024-10-29 18:55:50,200][ INFO] ti5Motor 5has been created!
+[2024-10-29 18:55:50,200][ INFO] ti5Motor 6has been created!
+[2024-10-29 18:55:50,200][ INFO] endpos: 0,0,0
+[2024-10-29 18:55:50,200][ INFO] Getting CSP!
+[2024-10-29 18:55:50,200][DEBUG] Sent 1bytes message!41 00 00 00 00 00 00 00 
+[2024-10-29 18:55:50,202][DEBUG] Received 8bytes message!5e ff 00 00 ec ff ff ff 
+[2024-10-29 18:55:50,202][ INFO] Current: 162 Speed: 0.000000 Position: -0.000019
+[2024-10-29 18:55:50,202][ INFO] Homing!
+[2024-10-29 18:55:50,202][ INFO] Moving to 0.000000 with velocity 0.523599
+[2024-10-29 18:55:50,202][DEBUG] Sent 7bytes message!58 00 00 00 00 49 03 00 
+[2024-10-29 18:55:50,202][ INFO] Getting CSP!
+[2024-10-29 18:55:50,202][DEBUG] Sent 1bytes message!41 00 00 00 00 00 00 00 
+[2024-10-29 18:55:50,203][DEBUG] Received 8bytes message!e0 05 00 00 fe ff ff ff 
+[2024-10-29 18:55:50,203][ INFO] Current: 1504 Speed: 0.000000 Position: -0.000002
+[2024-10-29 18:55:50,203][ INFO] Homing!
+[2024-10-29 18:55:50,203][ INFO] Moving to 0.000000 with velocity 0.523599
+[2024-10-29 18:55:50,203][DEBUG] Sent 7bytes message!58 00 00 00 00 49 03 00 
+[2024-10-29 18:55:50,203][ INFO] Getting CSP!
+[2024-10-29 18:55:50,203][DEBUG] Sent 1bytes message!41 00 00 00 00 00 00 00 
+[2024-10-29 18:55:50,205][DEBUG] Received 8bytes message!79 00 00 00 fa ff ff ff 
+[2024-10-29 18:55:50,205][ INFO] Current: 121 Speed: 0.000000 Position: -0.000007
+[2024-10-29 18:55:50,205][ INFO] Homing!
+[2024-10-29 18:55:50,205][ INFO] Moving to 0.000000 with velocity 0.523599
+[2024-10-29 18:55:50,205][DEBUG] Sent 7bytes message!58 00 00 00 00 a2 02 00 
+[2024-10-29 18:55:50,205][ INFO] Getting CSP!
+[2024-10-29 18:55:50,205][DEBUG] Sent 1bytes message!41 00 00 00 00 00 00 00 
+[2024-10-29 18:55:50,207][DEBUG] Received 8bytes message!78 fe 00 00 11 00 00 00 
+[2024-10-29 18:55:50,207][ INFO] Current: 392 Speed: 0.000000 Position: 0.000020
+[2024-10-29 18:55:50,207][ INFO] Homing!
+[2024-10-29 18:55:50,207][ INFO] Moving to 0.000000 with velocity 0.523599
+[2024-10-29 18:55:50,207][DEBUG] Sent 7bytes message!58 00 00 00 00 a2 02 00 
+[2024-10-29 18:55:50,207][ INFO] Getting CSP!
+[2024-10-29 18:55:50,207][DEBUG] Sent 1bytes message!41 00 00 00 00 00 00 00 
+[2024-10-29 18:55:50,209][DEBUG] Received 8bytes message!00 00 00 00 34 9e 07 00 
+[2024-10-29 18:55:50,209][ INFO] Current: 0 Speed: 0.000000 Position: 0.938533
+[2024-10-29 18:55:50,209][ INFO] Homing!
+[2024-10-29 18:55:50,209][ INFO] Moving to 0.000000 with velocity 0.523599
+[2024-10-29 18:55:50,209][DEBUG] Sent 7bytes message!58 00 00 00 00 a8 01 00 
+[2024-10-29 18:55:50,209][ INFO] frameNow: 0.81215,-3.99129e-08,6.06455e-06
+[2024-10-29 18:55:57,309][ INFO] ti5Motor 1has been created!
+[2024-10-29 18:55:57,309][ INFO] ti5Motor 2has been created!
+[2024-10-29 18:55:57,309][ INFO] ti5Motor 3has been created!
+[2024-10-29 18:55:57,309][ INFO] ti5Motor 4has been created!
+[2024-10-29 18:55:57,309][ INFO] ti5Motor 5has been created!
+[2024-10-29 18:55:57,309][ INFO] ti5Motor 5has been created!
+[2024-10-29 18:55:57,309][ INFO] ti5Motor 6has been created!
+[2024-10-29 18:55:57,309][ INFO] endpos: 0,0,0
+[2024-10-29 18:55:57,309][ INFO] Getting CSP!
+[2024-10-29 18:55:57,309][DEBUG] Sent 1bytes message!41 00 00 00 00 00 00 00 
+[2024-10-29 18:55:57,311][DEBUG] Received 8bytes message!6a ff 00 00 ec ff ff ff 
+[2024-10-29 18:55:57,311][ INFO] Current: 150 Speed: 0.000000 Position: -0.000019
+[2024-10-29 18:55:57,311][ INFO] Homing!
+[2024-10-29 18:55:57,311][ INFO] Moving to 0.000000 with velocity 0.523599
+[2024-10-29 18:55:57,311][DEBUG] Sent 7bytes message!58 00 00 00 00 49 03 00 
+[2024-10-29 18:55:57,311][ INFO] Getting CSP!
+[2024-10-29 18:55:57,311][DEBUG] Sent 1bytes message!41 00 00 00 00 00 00 00 
+[2024-10-29 18:55:57,313][DEBUG] Received 8bytes message!27 05 00 00 01 00 00 00 
+[2024-10-29 18:55:57,313][ INFO] Current: 1319 Speed: 0.000000 Position: 0.000001
+[2024-10-29 18:55:57,313][ INFO] Homing!
+[2024-10-29 18:55:57,313][ INFO] Moving to 0.000000 with velocity 0.523599
+[2024-10-29 18:55:57,313][DEBUG] Sent 7bytes message!58 00 00 00 00 49 03 00 
+[2024-10-29 18:55:57,313][ INFO] Getting CSP!
+[2024-10-29 18:55:57,313][DEBUG] Sent 1bytes message!41 00 00 00 00 00 00 00 
+[2024-10-29 18:55:57,314][DEBUG] Received 8bytes message!70 00 00 00 fb ff ff ff 
+[2024-10-29 18:55:57,314][ INFO] Current: 112 Speed: 0.000000 Position: -0.000006
+[2024-10-29 18:55:57,314][ INFO] Homing!
+[2024-10-29 18:55:57,314][ INFO] Moving to 0.000000 with velocity 0.523599
+[2024-10-29 18:55:57,314][DEBUG] Sent 7bytes message!58 00 00 00 00 a2 02 00 
+[2024-10-29 18:55:57,314][ INFO] Getting CSP!
+[2024-10-29 18:55:57,314][DEBUG] Sent 1bytes message!41 00 00 00 00 00 00 00 
+[2024-10-29 18:55:57,316][DEBUG] Received 8bytes message!6d fe 00 00 11 00 00 00 
+[2024-10-29 18:55:57,316][ INFO] Current: 403 Speed: 0.000000 Position: 0.000020
+[2024-10-29 18:55:57,316][ INFO] Homing!
+[2024-10-29 18:55:57,316][ INFO] Moving to 0.000000 with velocity 0.523599
+[2024-10-29 18:55:57,316][DEBUG] Sent 7bytes message!58 00 00 00 00 a2 02 00 
+[2024-10-29 18:55:57,316][ INFO] Getting CSP!
+[2024-10-29 18:55:57,316][DEBUG] Sent 1bytes message!41 00 00 00 00 00 00 00 
+[2024-10-29 18:55:57,318][DEBUG] Received 8bytes message!00 00 00 00 34 9e 07 00 
+[2024-10-29 18:55:57,318][ INFO] Current: 0 Speed: 0.000000 Position: 0.938533
+[2024-10-29 18:55:57,318][ INFO] Homing!
+[2024-10-29 18:55:57,318][ INFO] Moving to 0.000000 with velocity 0.523599
+[2024-10-29 18:55:57,318][DEBUG] Sent 7bytes message!58 00 00 00 00 a8 01 00 
+[2024-10-29 18:55:57,318][ INFO] frameNow: 0.81215,-3.99557e-08,7.86332e-06
+[2024-10-29 18:57:04,517][ INFO] ti5Motor 1has been created!
+[2024-10-29 18:57:04,517][ INFO] ti5Motor 2has been created!
+[2024-10-29 18:57:04,517][ INFO] ti5Motor 3has been created!
+[2024-10-29 18:57:04,517][ INFO] ti5Motor 4has been created!
+[2024-10-29 18:57:04,517][ INFO] ti5Motor 5has been created!
+[2024-10-29 18:57:04,517][ INFO] ti5Motor 5has been created!
+[2024-10-29 18:57:04,517][ INFO] ti5Motor 6has been created!
+[2024-10-29 18:57:04,517][ INFO] endpos: 0,0,0
+[2024-10-29 18:57:04,517][ INFO] Getting CSP!
+[2024-10-29 18:57:04,517][DEBUG] Sent 1bytes message!41 00 00 00 00 00 00 00 
+[2024-10-29 18:57:04,518][DEBUG] Received 8bytes message!8f ff 00 00 ee ff ff ff 
+[2024-10-29 18:57:04,518][ INFO] Current: 113 Speed: 0.000000 Position: -0.000017
+[2024-10-29 18:57:04,518][ INFO] Homing!
+[2024-10-29 18:57:04,518][ INFO] Moving to 0.000000 with velocity 0.523599
+[2024-10-29 18:57:04,518][DEBUG] Sent 7bytes message!58 00 00 00 00 49 03 00 
+[2024-10-29 18:57:04,518][ INFO] Getting CSP!
+[2024-10-29 18:57:04,518][DEBUG] Sent 1bytes message!41 00 00 00 00 00 00 00 
+[2024-10-29 18:57:04,520][DEBUG] Received 8bytes message!5c 05 00 00 ff ff ff ff 
+[2024-10-29 18:57:04,520][ INFO] Current: 1372 Speed: 0.000000 Position: -0.000001
+[2024-10-29 18:57:04,520][ INFO] Homing!
+[2024-10-29 18:57:04,520][ INFO] Moving to 0.000000 with velocity 0.523599
+[2024-10-29 18:57:04,520][DEBUG] Sent 7bytes message!58 00 00 00 00 49 03 00 
+[2024-10-29 18:57:04,520][ INFO] Getting CSP!
+[2024-10-29 18:57:04,520][DEBUG] Sent 1bytes message!41 00 00 00 00 00 00 00 
+[2024-10-29 18:57:04,522][DEBUG] Received 8bytes message!6a 00 00 00 fd ff ff ff 
+[2024-10-29 18:57:04,522][ INFO] Current: 106 Speed: 0.000000 Position: -0.000004
+[2024-10-29 18:57:04,522][ INFO] Homing!
+[2024-10-29 18:57:04,522][ INFO] Moving to 0.000000 with velocity 0.523599
+[2024-10-29 18:57:04,522][DEBUG] Sent 7bytes message!58 00 00 00 00 a2 02 00 
+[2024-10-29 18:57:04,522][ INFO] Getting CSP!
+[2024-10-29 18:57:04,522][DEBUG] Sent 1bytes message!41 00 00 00 00 00 00 00 
+[2024-10-29 18:57:04,523][DEBUG] Received 8bytes message!76 fe 00 00 11 00 00 00 
+[2024-10-29 18:57:04,523][ INFO] Current: 394 Speed: 0.000000 Position: 0.000020
+[2024-10-29 18:57:04,523][ INFO] Homing!
+[2024-10-29 18:57:04,523][ INFO] Moving to 0.000000 with velocity 0.523599
+[2024-10-29 18:57:04,523][DEBUG] Sent 7bytes message!58 00 00 00 00 a2 02 00 
+[2024-10-29 18:57:04,523][ INFO] Getting CSP!
+[2024-10-29 18:57:04,523][DEBUG] Sent 1bytes message!41 00 00 00 00 00 00 00 
+[2024-10-29 18:57:04,525][DEBUG] Received 8bytes message!00 00 00 00 34 9e 07 00 
+[2024-10-29 18:57:04,525][ INFO] Current: 0 Speed: 0.000000 Position: 0.938533
+[2024-10-29 18:57:04,525][ INFO] Homing!
+[2024-10-29 18:57:04,525][ INFO] Moving to 0.000000 with velocity 0.523599
+[2024-10-29 18:57:04,525][DEBUG] Sent 7bytes message!58 00 00 00 00 a8 01 00 
+[2024-10-29 18:57:04,525][ INFO] frameNow: 0.81215,-3.76752e-08,6.66759e-06
+[2024-11-24 17:17:04,707][ INFO] ti5Motor 1has been created!
+[2024-11-24 17:17:04,707][ INFO] ti5Motor 2has been created!
+[2024-11-24 17:17:04,707][ INFO] ti5Motor 3has been created!
+[2024-11-24 17:17:04,707][ INFO] ti5Motor 4has been created!
+[2024-11-24 17:17:04,707][ INFO] ti5Motor 5has been created!
+[2024-11-24 17:17:04,707][ INFO] ti5Motor 6has been created!
+[2024-11-24 17:17:04,707][ INFO] ti5Motor 7has been created!
+[2024-11-24 17:17:04,707][ INFO] endpos: 0,0,0
+[2024-11-24 17:17:04,707][ INFO] Getting CSP!
+[2024-11-24 17:17:04,707][DEBUG] Sent 1bytes message!41 00 00 00 00 00 00 00 
+[2024-11-24 17:17:07,709][ERROR] Receive Timeout! 
+[2024-11-24 17:17:07,709][ INFO] Homing!
+[2024-11-24 17:17:07,709][ INFO] Moving to 0.000000 with velocity 0.523599
+[2024-11-24 17:17:07,709][DEBUG] Sent 7bytes message!58 00 00 00 00 49 03 00 
+[2024-11-24 17:17:07,709][ INFO] Getting CSP!
+[2024-11-24 17:17:07,709][DEBUG] Sent 1bytes message!41 00 00 00 00 00 00 00 
+[2024-11-24 17:17:10,712][ERROR] Receive Timeout! 
+[2024-11-24 17:17:10,712][ INFO] Homing!
+[2024-11-24 17:17:10,712][ INFO] Moving to 0.000000 with velocity 0.523599
+[2024-11-24 17:17:10,712][DEBUG] Sent 7bytes message!58 00 00 00 00 49 03 00 
+[2024-11-24 17:17:10,712][ INFO] Getting CSP!
+[2024-11-24 17:17:10,712][DEBUG] Sent 1bytes message!41 00 00 00 00 00 00 00 
+[2024-11-24 17:17:13,713][ERROR] Receive Timeout! 
+[2024-11-24 17:17:13,713][ INFO] Homing!
+[2024-11-24 17:17:13,713][ INFO] Moving to 0.000000 with velocity 0.523599
+[2024-11-24 17:17:13,713][DEBUG] Sent 7bytes message!58 00 00 00 00 a2 02 00 
+[2024-11-24 17:17:13,713][ INFO] Getting CSP!
+[2024-11-24 17:17:13,713][DEBUG] Sent 1bytes message!41 00 00 00 00 00 00 00 
+[2024-11-24 17:17:16,716][ERROR] Receive Timeout! 
+[2024-11-24 17:17:16,716][ INFO] Homing!
+[2024-11-24 17:17:16,716][ INFO] Moving to 0.000000 with velocity 0.523599
+[2024-11-24 17:17:16,716][DEBUG] Sent 7bytes message!58 00 00 00 00 a2 02 00 
+[2024-11-24 17:17:16,716][ INFO] Getting CSP!
+[2024-11-24 17:17:16,716][DEBUG] Sent 1bytes message!41 00 00 00 00 00 00 00 
+[2024-11-24 17:17:19,717][ERROR] Receive Timeout! 
+[2024-11-24 17:17:19,717][ INFO] Homing!
+[2024-11-24 17:17:19,717][ INFO] Moving to 0.000000 with velocity 0.523599
+[2024-11-24 17:17:19,717][DEBUG] Sent 7bytes message!58 00 00 00 00 a8 01 00 
+[2024-11-24 17:17:19,717][ INFO] frameNow: 0.81215,-1.72267e-08,2.3223e-08

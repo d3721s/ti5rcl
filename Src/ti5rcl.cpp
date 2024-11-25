@@ -53,6 +53,8 @@ bool ti5Robot::linear_move(const KDL::Frame *end_pos)
     for (int i = 0; i < _nrOfJoints; i++)
     {
         _joint[i]->quickGetCSP(&c, &v, &qNow(i));
+        _joint[i]->home();
+        _joint[i]=0;
     }
     // 求末端位姿
     try
@@ -76,11 +78,8 @@ bool ti5Robot::linear_move(const KDL::Frame *end_pos)
                 for (int j = 0; j < 4; ++j)
                 {
                     of << current_pose(i, j) << "\t";
-                    cout <<current_pose(i, j) << "\t";
                 }
             of << "\n";
-            cout << "\n";
-
         }
         of.close();
     }
@@ -90,6 +89,12 @@ bool ti5Robot::linear_move(const KDL::Frame *end_pos)
         std::cout << "I encountered this error : " << error.Description() << std::endl;
         std::cout << "with the following type " << error.GetType() << std::endl;
     }
+
+
+
+
+
+
 
     return true;
 }
